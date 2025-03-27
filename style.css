@@ -1,0 +1,70 @@
+/* Colores personalizados */
+.bg-light-purple {
+    background-color: #C4C1E0;
+}
+
+.bg-dark-purple {
+    background-color: #3B3A56;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Botones superiores */
+.custom-btn {
+    background-color: #3B3A96;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: white;
+}
+
+.custom-btn:hover {
+    background-color: #2A2870;
+}
+
+/* Caja de iconos */
+.icon-box {
+    display: inline-block;
+    background-color: #504E70;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+/* Iconos */
+.icon-menu,
+nav i {
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+nav i:hover {
+    color: #E0C1E0;
+}
+
+/* Barra de búsqueda */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-icon {
+    padding: 0 10px;
+    color: #888;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
