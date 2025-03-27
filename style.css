@@ -1,70 +1,130 @@
-/* Colores personalizados */
-.bg-light-purple {
-    background-color: #C4C1E0;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.bg-dark-purple {
-    background-color: #3B3A56;
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: #b0acc7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .logo {
-    font-family: 'Arial', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: black;
 }
 
-/* Botones superiores */
-.custom-btn {
-    background-color: #3B3A96;
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    background-color: #312c66;
+    color: white;
     border: none;
     padding: 8px 15px;
-    border-radius: 8px;
-    font-size: 14px;
-    color: white;
-}
-
-.custom-btn:hover {
-    background-color: #2A2870;
-}
-
-/* Caja de iconos */
-.icon-box {
-    display: inline-block;
-    background-color: #504E70;
-    padding: 8px 12px;
-    border-radius: 6px;
-}
-
-/* Iconos */
-.icon-menu,
-nav i {
-    font-size: 18px;
-    color: white;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-nav i:hover {
-    color: #E0C1E0;
+.bottom-bar {
+    background-color: #363348;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
 }
 
-/* Barra de búsqueda */
-.search-box {
+.menu-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #e0b9d2;
+    cursor: pointer;
+}
+
+.search-container {
     display: flex;
     align-items: center;
     background-color: white;
+    padding: 5px 10px;
     border-radius: 20px;
-    padding: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
 }
 
 .search-icon {
-    padding: 0 10px;
-    color: #888;
+    font-size: 16px;
 }
 
-.search-input {
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    font-size: 20px;
+    color: white;
+}
+
+/* ---- SLIDER ---- */
+.slider-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
     border: none;
-    outline: none;
-    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* ---- CATEGORÍAS ---- */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-weight: bold;
 }
