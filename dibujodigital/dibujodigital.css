@@ -60,11 +60,14 @@ h2 {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Aumenta el minmax */
     gap: 15px;
-    max-width: 900px;
+    max-width: 1500px; /* Puedes aumentar este valor si es necesario */
     margin: auto;
+    margin-bottom: 40px;
 }
+
+
 
 .gallery img {
     width: 100%;
@@ -79,44 +82,66 @@ h2 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .artist-container {
-    max-width: 900px;
+    max-width: 1400px;
     margin: auto;
-}
-
-.artist-card {
-    display: flex;
-    align-items: center;
     background-color: #C7C6E8;
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 15px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+.artist-card {
+    display: flex;
+    align-items: center;
+}
 
+.nombre{   
+    font-size: 50px; 
+    align-items: center; 
+}
 .artist-card img {
-    width: 100px;
-    height: 100px;
+    
+    
+    align-items: center;
+    width: 200px;
+    height: 400px;
     border-radius: 10px;
     object-fit: cover;
     margin-right: 15px;
 }
 
-.info {
-    flex: 1;
-    text-align: left;
+
+
+.informacion {  
+    display: flex;
+    align-items: center;
+    font-size: 30px;  
+    gap: 10px;
 }
 
-.perfiles {
+
+
+.info {
     display: flex;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+}
+
+.perfiles {  
+
+    display: flex; 
     gap: 10px;
     margin: 10px 0;
 }
 
 .perfiles img {
-    width: 60px;
-    height: 60px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 350px;
     border-radius: 5px;
-    object-fit: cover;
+    
     transition: transform 0.3s ease-in-out;
 }
 
@@ -124,7 +149,8 @@ h2 {
     transform: scale(1.1);
 }
 
-button {
+.ver-mas {
+    display: flex;
     background-color: #6a5acd;
     color: white;
     padding: 8px 12px;
@@ -132,8 +158,15 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    font-size: 30px;
+    display: block;  
+    text-align: center; /* Centra el texto dentro del botón */
+    width: fit-content; /* Evita que ocupe todo el ancho */
 }
 
-button:hover {
+
+
+.ver-mas:hover {
+    display: flex;
     background-color: #4b3b98;
 }
