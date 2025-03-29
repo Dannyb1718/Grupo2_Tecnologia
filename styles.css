@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -49,16 +48,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 20px 20px;
 }
 
 .menu-btn {
     background: none;
-    border: none;
     font-size: 20px;
     color: #e0b9d2;
     cursor: pointer;
 }
+.search-bar {
+    width: 50%; /* Ajusta este valor para cambiar la longitud */
+    max-width: 600px; /* Para limitar su tamaño máximo */
+    padding: 10px;
+    border-radius: 20px; /* Esto hace que los bordes sean redondeados */
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
 
 /* ---- SLIDER ---- */
 .slider-container {
@@ -134,8 +142,8 @@ body {
 }
 
 .categoria {
-    width: 370px;
-    height: 400;
+    width: 300px;
+    height: 300px;
     text-align: center;
     background: #d3cce3;
     padding: 15px;
@@ -147,6 +155,8 @@ body {
 }
 
 .categoria img {
+    width: 200px;
+    height: 200px;
     width: 90%;
     height: auto;
     border-radius: 10px;
@@ -158,4 +168,43 @@ body {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+.Portafolio {
+    margin-top: 40px;
+    margin-left: 40px;
+    width: 80%;
+    max-width: 800px; /* Máximo tamaño */
+    height: auto;
+}
+.Portafolio2 {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 92%;
+    max-width: 800px;
+    height: auto;
+    padding: 30px 20px;
+    border: 2px dashed #d3cce3;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #333;
+    background-color: #d3cce3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.Portafolio2:hover {
+    background-color: #9e99be;
+    border-color: #9e99be;
+    color: #fff;
+}
+
+.Portafolio2:active, .Portafolio2:focus {
+    background-color: #655e8f;
+    color: #fff;
+    border-color: #655e8f;
+    outline: none;
 }
