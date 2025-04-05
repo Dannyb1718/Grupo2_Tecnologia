@@ -82,6 +82,20 @@ video {
     cursor: pointer;
 }
 
+.video-hover {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.video-hover:hover {
+    transform: scale(1.2); /* Aumenta el tamaño al pasar el cursor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
+
 .gallery img {
     width: 100%;
     height: auto;
