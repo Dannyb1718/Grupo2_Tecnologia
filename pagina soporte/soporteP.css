@@ -418,13 +418,13 @@ form button:hover {
   font-size: 18px;
 }
 
-.iconos-sociales {
+.iconos-redes {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-.iconos-sociales img {
+.iconos-redes img {
   width: 32px;
   height: 32px;
   object-fit: contain;
@@ -449,7 +449,7 @@ form button:hover {
     gap: 12px;
   }
 
-  .iconos-sociales {
+  .iconos-redes {
     justify-content: center;
   }
 }

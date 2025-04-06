@@ -4,14 +4,14 @@ body {
   color: #333;
 }
 
-/* Header*/
+/* Encabezado */
 header {
   background-color: #c9c1e5;
   padding: 16px 32px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
-.header-top {
+.encabezado-superior {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,16 +21,16 @@ header {
 .logo {
   font-size: 32px;
   font-weight: 800;
-  color: #38394a; /* Se cambia el color rosa a gris oscuro */
+  color: #38394a;
 }
 
-.actions {
+.acciones {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
 
-.actions button {
+.acciones button {
   padding: 8px 16px;
   background-color: #060830;
   color: #fff;
@@ -41,11 +41,11 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.actions button:hover {
+.acciones button:hover {
   background-color: #5a5fb9;
 }
 
-.header-bottom {
+.encabezado-inferior {
   margin-top: 12px;
   display: flex;
   justify-content: space-between;
@@ -53,7 +53,7 @@ header {
   flex-wrap: wrap;
 }
 
-.search-bar input {
+.barra-busqueda input {
   padding: 10px 14px;
   border: 1px solid #ccc;
   border-radius: 12px;
@@ -61,15 +61,15 @@ header {
   font-size: 14px;
 }
 
-/* MENÚ PRINCIPAL */
-.main-menu ul {
+/*MENÚ PRINCIPAL*/
+.menu-principal ul {
   list-style: none;
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
 }
 
-.main-menu a {
+.menu-principal a {
   text-decoration: none;
   color: #333;
   padding: 8px 14px;
@@ -78,24 +78,24 @@ header {
   font-weight: 500;
 }
 
-.main-menu a:hover {
+.menu-principal a:hover {
   background-color: #a67dff;
 }
 
-/* -------- PERFIL -------- */
-.perfil-container {
+/*Perfil*/
+.contenedor-perfil {
   padding: 40px 20px;
   max-width: 1200px;
   margin: auto;
 }
 
-.perfil-content {
+.contenido-perfil {
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
 }
 
-.sidebar {
+.barra-lateral {
   flex: 1 1 200px;
   display: flex;
   flex-direction: column;
@@ -122,7 +122,7 @@ header {
   padding: 10px;
 }
 
-.menu-icon {
+.icono-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,13 +138,13 @@ header {
   position: relative;
 }
 
-.menu-icon img {
+.icono-menu img {
   width: 48px;
   height: 48px;
   margin-bottom: 8px;
 }
 
-.menu-icon span {
+.icono-menu span {
   visibility: hidden;
   height: 1px;
   width: 1px;
@@ -153,8 +153,8 @@ header {
   left: -9999px;
 }
 
-.menu-icon:focus span,
-.menu-icon:hover span {
+.icono-menu:focus span,
+.icono-menu:hover span {
   visibility: visible;
   position: static;
   width: auto;
@@ -164,35 +164,35 @@ header {
   font-weight: 600;
 }
 
-.menu-icon:hover,
-.menu-icon.active {
+.icono-menu:hover,
+.icono-menu.activo {
   background-color: #e1bee7;
   color: #4a148c;
 }
 
-.perfil-formulario {
+.formulario-perfil {
   flex: 2 1 500px;
 }
 
-.perfil-header {
+.encabezado-perfil {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.perfil-header h1 {
+.encabezado-perfil h1 {
   font-size: 26px;
   color: #6a1b9a;
   margin: 0;
 }
 
-.perfil-header img {
+.encabezado-perfil img {
   width: 40px;
   height: 40px;
 }
 
-/* Formulario */
+/*Formulario*/
 .campo {
   margin-bottom: 20px;
   display: flex;
@@ -212,7 +212,7 @@ header {
   font-size: 15px;
 }
 
-.btn-actualizar {
+.boton-actualizar {
   margin-top: 10px;
   padding: 12px 20px;
   background-color: #8e24aa;
@@ -225,11 +225,11 @@ header {
   transition: background-color 0.3s ease;
 }
 
-.btn-actualizar:hover {
+.boton-actualizar:hover {
   background-color: #6a1b9a;
 }
 
-/* -------- FOOTER -------- */
+/*Footer*/
 .footer {
   display: flex;
   justify-content: space-between;
@@ -245,21 +245,22 @@ header {
   font-size: 18px;
 }
 
-.social-icons {
+.iconos-redes {
   display: flex;
   gap: 12px;
   align-items: center;
 }
 
-.social-icons img {
+.iconos-redes img {
   width: 32px;
   height: 32px;
   object-fit: contain;
 }
 
-/* -------- RESPONSIVE -------- */
+/*Responsive*/
 @media screen and (max-width: 768px) {
-  .perfil-content {
+  /*perfil*/
+  .contenido-perfil {
     flex-direction: column;
     align-items: center;
   }
@@ -268,7 +269,7 @@ header {
     width: 100%;
   }
 
-  .sidebar {
+  .barra-lateral {
     width: 100%;
     align-items: center;
   }
@@ -278,11 +279,31 @@ header {
     max-width: 300px;
   }
 
-  .perfil-header {
+  .encabezado-perfil {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 10px;
+  }
+  /*header*/
+  header {
+    padding: 10px 20px;
+  }
+
+  .menu-principal ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .barra-busqueda input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .acciones {
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
   }
 }
 
@@ -293,29 +314,8 @@ header {
     gap: 12px;
   }
 
-  .social-icons {
+  .iconos-redes {
     justify-content: center;
   }
 }
 
-@media (max-width: 768px) {
-  header {
-    padding: 10px 20px;
-  }
-
-  .main-menu ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .search-bar input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .actions {
-    justify-content: flex-start;
-    margin-top: 10px;
-    flex-wrap: wrap;
-  }
-}

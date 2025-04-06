@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Configuración - Art Dayz</title>
   <link rel="stylesheet" href="configperfil.css"/>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
   <header>
-    <div class="header-top">
+    <div class="encabezado-superior">
       <div class="logo">Art Dayz</div>
-      <div class="actions">
+      <div class="acciones">
         <button>Crear cuenta</button>
         <button>Iniciar sesión</button>
       </div>
     </div>
-    <div class="header-bottom">
-      <div class="search-bar">
+    <div class="encabezado-inferior">
+      <div class="barra-busqueda">
         <input type="text" placeholder="Buscar..." aria-label="Buscar en el sitio"/>
       </div>
-      <nav class="main-menu" aria-label="Menú principal">
+      <nav class="menu-principal" aria-label="Menú principal">
         <ul>
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Buscar Artistas</a></li>
@@ -33,34 +33,33 @@
     </div>
   </header>
 
-  <main class="perfil-container">
-    <div class="perfil-content">
-      <!-- Lado izquierdo -->
-      <aside class="sidebar">
+  <main class="contenedor-perfil">
+    <div class="contenido-perfil">
+ 
+      <aside class="barra-lateral">
         <img src="imagenes_mperfil/portada-foto-perfil.jpg" alt="Foto de perfil del usuario" class="foto-perfil" />
         <nav class="menu-lateral">
-          <button class="menu-icon" aria-label="Ver perfil">
+          <button class="icono-menu" aria-label="Ver perfil">
             <img src="imagenes_mperfil/PERFILICONO.png" alt="Icono Perfil" />
             <span>Perfil</span>
           </button>
-          <button class="menu-icon" aria-label="Cambiar contraseña">
+          <button class="icono-menu" aria-label="Cambiar contraseña">
             <img src="imagenes_mperfil/seguro.png" alt="Icono Contraseña" />
             <span>Contraseña</span>
           </button>
-          <button class="menu-icon active" aria-label="Configuración de seguridad">
+          <button class="icono-menu activo" aria-label="Configuración de seguridad">
             <img src="imagenes_mperfil/editar.png" alt="Icono Configuración" />
             <span>Configuración</span>
           </button>
-          <button class="menu-icon" aria-label="Eliminar cuenta">
+          <button class="icono-menu" aria-label="Eliminar cuenta">
             <img src="imagenes_mperfil/papelera.png" alt="Icono Eliminar" />
             <span>Eliminar</span>
           </button>
         </nav>
       </aside>
 
-      <!-- Lado derecho -->
-      <section class="perfil-formulario">
-        <div class="perfil-header">
+      <section class="formulario-perfil">
+        <div class="encabezado-perfil">
           <h1>Configuración</h1>
           <img src="imagenes_mperfil/editar.png" alt="Icono de configuración" />
         </div>
@@ -95,14 +94,14 @@
             <label for="clave-descarga">Contraseña actual</label>
             <input type="password" id="clave-descarga" placeholder="Ingresa tu contraseña" />
           </div>
-          <button type="submit" class="btn-actualizar">Descargar los datos</button>
+          <button type="submit" class="boton-actualizar">Descargar los datos</button>
         </form>
       </section>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="social-icons">
+    <div class="iconos-sociales">
       <img src="facebook.png" alt="Facebook" />
       <img src="twitter.png" alt="Twitter" />
       <img src="instagram.png" alt="Instagram" />
@@ -117,11 +116,11 @@
 
   <script>
     // Cambia color de ícono activo
-    const icons = document.querySelectorAll(".menu-icon");
-    icons.forEach(icon => {
-      icon.addEventListener("click", () => {
-        icons.forEach(i => i.classList.remove("active"));
-        icon.classList.add("active");
+    const iconos = document.querySelectorAll(".icono-menu");
+    iconos.forEach(icono => {
+      icono.addEventListener("click", () => {
+        iconos.forEach(i => i.classList.remove("activo"));
+        icono.classList.add("activo");
       });
     });
   </script>
