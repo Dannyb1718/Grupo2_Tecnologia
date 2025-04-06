@@ -7,28 +7,29 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header class="header">
-            <div class="top-bar">
-                <span class="logo">Art Dayz</span>
-                <nav class="nav-buttons">
-                    <button class="btn">Crear cuenta</button>
-                    <button class="btn">Iniciar Sesión</button>
-                </nav>
+        <header>
+            <div class="header-top">
+                <div class="logo">Art Dayz</div>
+                <div class="actions">
+                    <button>Crear cuenta</button>
+                    <button>Iniciar sesión</button>
+                </div>
             </div>
-            <div class="bottom-bar">
-                <button class="menu-btn">☰</button>
-                <div class="search-container">
-                    <input type="text" class="search-bar" placeholder="Buscar...">
-                    <span class="search-icon">🔍</span>
+            <div class="header-bottom">
+                <div class="search-bar">
+                    <input type="text" placeholder="Buscar...">
                 </div>
-                <div class="icons">
-                    <span class="icon">🆔</span>
-                    <span class="icon">🛒</span>
-                    <span class="icon">💻</span>
-                </div>
+                <div class="navbar-right">
+                    <ul class="nav-menu">
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#">Buscar Artistas</a></li>
+                      <li><a href="#">Mis Pedidos</a></li>
+                      <li><a href="#">Perfil</a></li>
+                      <li><a href="#">Carrito</a></li>
+                      <li><a href="#">Soporte</a></li>
+                    </ul>
             </div>
         </header>
-
         <section class="slider-container">
             <div class="slider">
                 <button class="prev" onclick="moveSlide(-1)">❮</button>
@@ -89,6 +90,11 @@
                     <h3>Visión:</h3>
                     <p>Ser una de las plataformas de referencia para la contratación de artistas globalmente, promoviendo el talento nacional e internacional y fomentando el crecimiento de la economía de los artistas.</p>
                 </div>
+                <div class="promo-artista">
+                    <img src="Imagenes/FondoMision.jpg" alt="Conviértete en artista">
+                    <div class="promo-texto">Conviértete en artista con ArtDays</div>
+                  </div>
+                  
             </div>
         </section>     
   
@@ -96,19 +102,18 @@
     </main>
 
     <footer class="footer">
-        <span class="footer-title">Art Dayz</span>
-        <div class="icon-container">
-          <img src="icons/x-icon.png" alt="X" class="icon">
-          <img src="icons/facebook.png" alt="Facebook" class="icon">
-          <img src="icons/instagram.png" alt="Instagram" class="icon">
-          <img src="icons/discord.png" alt="Discord" class="icon">
-          <img src="icons/youtube.png" alt="YouTube" class="icon">
-          <img src="icons/phone.png" alt="Teléfono" class="icon">
-          <img src="icons/email.png" alt="Correo" class="icon">
-          <img src="icons/tiktok.png" alt="TikTok" class="icon">
+        <div class="social-icons">
+          <img src="Imagenes/faace.jpg" alt="Facebook" />
+          <img src="Imagenes/x.jpg" alt="Twitter" />
+          <img src="Imagenes/insta.jpg" alt="Instagram" />
+          <img src="Imagenes/disc.jpg" alt="Discord" />
+          <img src="Imagenes/yutu.jpg" alt="YouTube" />
+          <img src="Imagenes/tiktok.jpg" alt="TikTok" />
+          <img src="Imagenes/linke.jpg" alt="LinkedIn" />
+          <img src="Imagenes/pinterest.jpg" alt="Pinterest" />
         </div>
+        <p>Art Dayz</p>
       </footer>
-        
-        <script src="script.js"></script>
+        <script src="JavaScript.js"></script>
     </body>
     </html>
