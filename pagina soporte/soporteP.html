@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soporte - ARTDAYS</title>
+    <link rel="stylesheet" href="soporteP.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">ARTDAYS</div>
+            <div class="actions">
+                <button>Crear cuenta</button>
+                <button>Iniciar sesión</button>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Explorar</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="support-section">
+            <div class="form-side">
+                <h2>¿Necesitas ayuda? Estamos aquí para asistirte</h2>
+                <p>Completa el siguiente formulario y un miembro de nuestro equipo se pondrá en contacto contigo.</p>
+                <form class="styled-form">
+                    <div class="form-group double">
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" placeholder="Escribe tu nombre">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" placeholder="Escribe tu apellido">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="ejemplo@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" placeholder="¿Sobre qué trata tu mensaje?">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Descripción del mensaje</label>
+                        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit">Subir PQCR</button>
+                </form>
+                
+            </div>
+            <div class="info-side">
+                <div class="chatbot-box">
+                    <img src="chatbot.png" alt="Icono de atención al cliente">
+                    <span>Atención al Cliente</span>
+                </div>
+                <div class="contact-icons">
+                    <img src="correo.png" alt="Correo electrónico">
+                    <img src="celular.png" alt="Número de celular">
+                    <img src="discord.png" alt="Discord">
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <h3>Preguntas Frecuentes</h3>
+            <div class="faq-item" style="background-color:#ffe6f0;">
+                <button class="toggle-btn" onclick="toggleFAQ(this)">Cuenta y seguridad <span class="arrow">&#9654;</span></button>
+                <div class="faq-content">Contenido de cuenta y seguridad...</div>
+            </div>
+            <div class="faq-item" style="background-color:#e0f7fa;">
+                <button class="toggle-btn" onclick="toggleFAQ(this)">Compras y ventas <span class="arrow">&#9654;</span></button>
+                <div class="faq-content">Contenido de compras y ventas...</div>
+            </div>
+            <div class="faq-item" style="background-color:#fff3e0;">
+                <button class="toggle-btn" onclick="toggleFAQ(this)">Pagos y reembolsos <span class="arrow">&#9654;</span></button>
+                <div class="faq-content">Contenido de pagos y reembolsos...</div>
+            </div>
+            <div class="faq-item" style="background-color:#e8f5e9;">
+                <button class="toggle-btn" onclick="toggleFAQ(this)">Publicaciones y arte <span class="arrow">&#9654;</span></button>
+                <div class="faq-content">Contenido de publicaciones y arte...</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <img src="facebook.png" alt="Facebook">
+            <img src="twitter.png" alt="Twitter">
+            <img src="instagram.png" alt="Instagram">
+            <img src="discord.png" alt="Discord">
+            <img src="youtube.png" alt="YouTube">
+            <img src="tiktok.png" alt="TikTok">
+            <img src="linkedin.png" alt="LinkedIn">
+            <img src="pinterest.png" alt="Pinterest">
+        </div>
+        <p>ARTDAYS</p>
+    </footer>
+
+    <script>
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const arrow = button.querySelector('.arrow');
+            content.classList.toggle('visible');
+            arrow.innerHTML = content.classList.contains('visible') ? '&#9660;' : '&#9654;';
+        }
+    </script>
+</body>
+</html>
