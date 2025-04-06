@@ -16,9 +16,14 @@ function alternarFAQ(boton) {
   const enviarMensaje = document.getElementById("enviarMensaje");
   const cuerpoChat = document.getElementById("cuerpoChat");
   const mensajeUsuario = document.getElementById("mensajeUsuario");
+  const cerrarChatbot = document.getElementById("cerrarChatbot");
   
   alternarChatbot.addEventListener("click", () => {
-    ventanaChatbot.style.display = ventanaChatbot.style.display === "block" ? "none" : "block";
+    ventanaChatbot.classList.toggle("open");
+  });
+  
+  cerrarChatbot.addEventListener("click", () => {
+    ventanaChatbot.classList.remove("open");
   });
   
   enviarMensaje.addEventListener("click", () => {
@@ -32,5 +37,14 @@ function alternarFAQ(boton) {
       cuerpoChat.scrollTop = cuerpoChat.scrollHeight;
     }
   });
+  
+  // Menú hamburguesa
+  const hamburguesa = document.getElementById("hamburguesa");
+  const menu = document.getElementById("elementos-menu");
+  
+  hamburguesa.addEventListener("click", () => {
+    menu.classList.toggle("mostrar");
+  });
+  
   
   

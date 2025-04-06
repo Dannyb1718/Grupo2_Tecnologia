@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Soporte - Art Dayz</title>
   <link rel="stylesheet" href="soporteP.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header>
@@ -72,14 +73,20 @@
         </div>
         <div class="iconos-contacto">
           <img src="imagenes soporte/correo.png" alt="Correo electrónico" />
+          <span>soporte@artdayz.com</span>
           <img src="imagenes soporte/celu.png" alt="Número de celular" />
+          <span>+57 300 123 4567</span>
           <img src="imagenes soporte/logo discord.png" alt="Discord" />
+          <span>ArtDayzSupport</span>
         </div>
       </div>
     </section>
 
     <div class="ventana-chatbot" id="ventanaChatbot">
-      <div class="cabecera-chat">Soporte ArtDayz</div>
+      <div class="cabecera-chat">
+        Soporte ArtDayz
+        <span class="cerrar-chatbot" id="cerrarChatbot">&times;</span>
+      </div>
       <div class="cuerpo-chat" id="cuerpoChat">
         <div class="mensaje-bot">
           <img src="imagenes soporte/bot1.png" alt="bot" class="avatar-bot">
@@ -88,7 +95,9 @@
       </div>
       <div class="entrada-chat">
         <input type="text" id="mensajeUsuario" placeholder="Escribe tu mensaje acá..." />
-        <button id="enviarMensaje"><i class="fas fa-paper-plane"></i></button>
+        <button id="enviarMensaje" title="Enviar mensaje">
+            <span class="icono-flecha">➤</span>
+          </button>
       </div>
     </div>
 
@@ -157,4 +166,3 @@
   <script src="soporteP.js"></script>
 </body>
 </html>
-

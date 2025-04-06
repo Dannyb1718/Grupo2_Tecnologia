@@ -264,6 +264,7 @@ form button:hover {
   padding: 12px;
   font-weight: bold;
   text-align: center;
+  position: relative;
 }
 
 .cuerpo-chat {
@@ -319,6 +320,14 @@ form button:hover {
   max-width: 80%;
 }
 
+.cerrar-chatbot {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
 /* Menú Responsive */
 .hamburguesa {
   display: none;
@@ -331,26 +340,6 @@ form button:hover {
     padding: 10px 20px;
   }
 
-  .menu-principal ul {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  .menu-principal ul.show {
-    display: flex;
-  }
-
-  .hamburguesa {
-    display: block;
-  }
-
   .barra-busqueda input {
     width: 100%;
     margin-bottom: 10px;
@@ -360,10 +349,6 @@ form button:hover {
     justify-content: flex-start;
     margin-top: 10px;
     flex-wrap: wrap;
-  }
-
-  .seccion-soporte {
-    padding: 24px;
   }
 
   form button {
@@ -378,8 +363,42 @@ form button:hover {
     width: 100%;
   }
 
+  .seccion-soporte {
+    grid-template-columns: 1fr;
+  }
+
+  .grupo-formulario.doble {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario-estilizado input,
+  .formulario-estilizado textarea {
+    width: 100%;
+  }
+
   .iconos-contacto {
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .menu-principal ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e0d7ff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-principal ul.mostrar {
+    display: flex;
+  }
+
+  .hamburguesa {
+    display: block;
   }
 }
 
