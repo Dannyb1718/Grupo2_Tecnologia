@@ -8,11 +8,9 @@
   /*HEADER*/
   
   header {
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
+    background-color: #c9c1e5;
     padding: 16px 32px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    border-radius: 0 0 20px 20px;
   }
   
   .header-top {
@@ -25,7 +23,7 @@
   .logo {
     font-size: 32px;
     font-weight: 800;
-    color: #e91e63;
+    color: #38394a;
   }
   
   .actions {
@@ -36,7 +34,7 @@
   
   .actions button {
     padding: 8px 16px;
-    background-color: #e91e63;
+    background-color: #060830;
     color: #fff;
     border: none;
     border-radius: 12px;
@@ -46,7 +44,7 @@
   }
   
   .actions button:hover {
-    background-color: #d81b60;
+    background-color: #5a5fb9;
   }
   
   .header-bottom {
@@ -83,7 +81,7 @@
   }
   
   .main-menu a:hover {
-    background-color: #fce4ec;
+    background-color: #a67dff;
   }
   
   /*SECCION PRINCIPAL*/
@@ -111,7 +109,7 @@
   
   .form-side h2 {
     margin-bottom: 12px;
-    color: #e91e63;
+    color: #150438;
     font-size: 24px;
     font-weight: bold;
   }
@@ -138,7 +136,7 @@
   }
   
   form button {
-    background-color: #e91e63;
+    background-color: #5934ff;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -149,7 +147,7 @@
   }
   
   form button:hover {
-    background-color: #c2185b;
+    background-color: #4318c2;
   }
   
   /*SECCION INFO*/
@@ -179,7 +177,7 @@
   
   .chatbot-box span {
     font-weight: bold;
-    color: #e91e63;
+    color: #150438;
   }
   
   /*ICONOS DE CONTACTO CENTRADOS EN COLUMNA */
@@ -201,7 +199,7 @@
   .faq h3 {
     font-size: 26px;
     margin-bottom: 24px;
-    color: #e91e63;
+    color: #2e0da5;
     text-align: center;
     font-weight: 700;
   }
@@ -233,7 +231,7 @@
     display: none;
     margin-top: 10px;
     font-size: 14px;
-    color: #444;
+    color: #2e0da5;
   }
   
   .faq-content.visible {
@@ -246,15 +244,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-    border-radius: 20px 20px 0 0;
+    background-color: #c9c1e5;
     flex-wrap: wrap;
   }
   
   .footer p {
     font-weight: bold;
-    color: #e91e63;
+    color: #38394a;
     font-size: 18px;
   }
   
