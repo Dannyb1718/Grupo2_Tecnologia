@@ -1,125 +1,160 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soporte - ARTDAYS</title>
-    <link rel="stylesheet" href="soporteP.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Soporte - Art Dayz</title>
+  <link rel="stylesheet" href="soporteP.css" />
 </head>
 <body>
-    <header>
-        <div class="header-top">
-            <div class="logo">Art Dayz</div>
-            <div class="actions">
-                <button>Crear cuenta</button>
-                <button>Iniciar sesión</button>
+  <header>
+    <div class="encabezado-superior">
+      <div class="logo">Art Dayz</div>
+      <div class="acciones">
+        <button>Crear cuenta</button>
+        <button>Iniciar sesión</button>
+      </div>
+    </div>
+    <div class="encabezado-inferior">
+      <div class="barra-busqueda">
+        <input type="text" placeholder="Buscar..." />
+      </div>
+      <nav class="menu-principal">
+        <div class="hamburguesa" id="hamburguesa">&#9776;</div>
+        <ul id="elementos-menu">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Buscar Artistas</a></li>
+          <li><a href="#">Mis Pedidos</a></li>
+          <li><a href="#">Perfil</a></li>
+          <li><a href="#">Carrito</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="contenedor-principal">
+    <section class="seccion-soporte">
+      <div class="lado-formulario">
+        <h2>¿Necesitas ayuda? Estamos aquí para asistirte</h2>
+        <p>Completa el siguiente formulario y un miembro de nuestro equipo se pondrá en contacto contigo.</p>
+        <form class="formulario-estilizado">
+          <div class="grupo-formulario doble">
+            <div>
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Escribe tu nombre" />
             </div>
+            <div>
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" placeholder="Escribe tu apellido" />
+            </div>
+          </div>
+          <div class="grupo-formulario">
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="ejemplo@email.com" />
+          </div>
+          <div class="grupo-formulario">
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" placeholder="¿Sobre qué trata tu mensaje?" />
+          </div>
+          <div class="grupo-formulario">
+            <label for="mensaje">Descripción del mensaje</label>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+          </div>
+          <button type="submit">Subir PQCR</button>
+        </form>
+      </div>
+
+      <div class="lado-info">
+        <div class="caja-chatbot" id="alternarChatbot">
+          <img src="imagenes soporte/bot1.png" alt="Icono de atención al cliente" />
+          <span>Atención al Cliente</span>
         </div>
-        <div class="header-bottom">
-            <div class="search-bar">
-                <input type="text" placeholder="Buscar...">
-            </div>
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Buscar Artistas</a></li>
-                    <li><a href="#">Mis Pedidos</a></li>
-                    <li><a href="#">Perfil</a></li>
-                    <li><a href="#">Carrito</a></li>
-                    <li><a href="#">Soporte</a></li>
-                </ul>
-            </nav>
+        <div class="iconos-contacto">
+          <img src="imagenes soporte/correo.png" alt="Correo electrónico" />
+          <img src="imagenes soporte/celu.png" alt="Número de celular" />
+          <img src="imagenes soporte/logo discord.png" alt="Discord" />
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main class="main-container">
-        <section class="support-section">
-            <div class="form-side">
-                <h2>¿Necesitas ayuda? Estamos aquí para asistirte</h2>
-                <p>Completa el siguiente formulario y un miembro de nuestro equipo se pondrá en contacto contigo.</p>
-                <form class="styled-form">
-                    <div class="form-group double">
-                        <div>
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre" placeholder="Escribe tu nombre">
-                        </div>
-                        <div>
-                            <label for="apellido">Apellido</label>
-                            <input type="text" id="apellido" placeholder="Escribe tu apellido">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="correo">Correo electrónico</label>
-                        <input type="email" id="correo" placeholder="ejemplo@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="asunto">Asunto</label>
-                        <input type="text" id="asunto" placeholder="¿Sobre qué trata tu mensaje?">
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Descripción del mensaje</label>
-                        <textarea id="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
-                    </div>
-                    <button type="submit">Subir PQCR</button>
-                </form>
-                
-            </div>
-            <div class="info-side">
-                <div class="chatbot-box">
-                    <img src="imagenes soporte/bot1.png" alt="Icono de atención al cliente">
-                    <span>Atención al Cliente</span>
-                </div>
-                <div class="contact-icons">
-                    <img src="correo.png" alt="Correo electrónico">
-                    <img src="celular.png" alt="Número de celular">
-                    <img src="discord.png" alt="Discord">
-                </div>
-            </div>
-        </section>
-
-        <section class="faq">
-            <h3>Preguntas Frecuentes</h3>
-            <div class="faq-item" style="background-color:#ffe6f0;">
-                <button class="toggle-btn" onclick="toggleFAQ(this)">Cuenta y seguridad <span class="arrow">&#9654;</span></button>
-                <div class="faq-content">Contenido de cuenta y seguridad...</div>
-            </div>
-            <div class="faq-item" style="background-color:#ffe6f0;">
-                <button class="toggle-btn" onclick="toggleFAQ(this)">Compras y ventas <span class="arrow">&#9654;</span></button>
-                <div class="faq-content">Contenido de compras y ventas...</div>
-            </div>
-            <div class="faq-item" style="background-color:#ffe6f0;">
-                <button class="toggle-btn" onclick="toggleFAQ(this)">Pagos y reembolsos <span class="arrow">&#9654;</span></button>
-                <div class="faq-content">Contenido de pagos y reembolsos...</div>
-            </div>
-            <div class="faq-item" style="background-color:#ffe6f0;">
-                <button class="toggle-btn" onclick="toggleFAQ(this)">Publicaciones y arte <span class="arrow">&#9654;</span></button>
-                <div class="faq-content">Contenido de publicaciones y arte...</div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="social-icons">
-            <img src="facebook.png" alt="Facebook">
-            <img src="twitter.png" alt="Twitter">
-            <img src="instagram.png" alt="Instagram">
-            <img src="discord.png" alt="Discord">
-            <img src="youtube.png" alt="YouTube">
-            <img src="tiktok.png" alt="TikTok">
-            <img src="linkedin.png" alt="LinkedIn">
-            <img src="pinterest.png" alt="Pinterest">
+    <div class="ventana-chatbot" id="ventanaChatbot">
+      <div class="cabecera-chat">Soporte ArtDayz</div>
+      <div class="cuerpo-chat" id="cuerpoChat">
+        <div class="mensaje-bot">
+          <img src="imagenes soporte/bot1.png" alt="bot" class="avatar-bot">
+          <div class="burbuja-mensaje">Hola, ¿tienes alguna duda? Estoy aquí para ayudarte.</div>
         </div>
-        <p>Art Dayz</p>
-    </footer>
+      </div>
+      <div class="entrada-chat">
+        <input type="text" id="mensajeUsuario" placeholder="Escribe tu mensaje acá..." />
+        <button id="enviarMensaje"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
 
-    <script>
-        function toggleFAQ(button) {
-            const content = button.nextElementSibling;
-            const arrow = button.querySelector('.arrow');
-            content.classList.toggle('visible');
-            arrow.innerHTML = content.classList.contains('visible') ? '&#9660;' : '&#9654;';
-        }
-    </script>
+    <section class="preguntas-frecuentes">
+      <h3>Preguntas Frecuentes</h3>
+
+      <div class="item-faq" style="background-color:#ffe6f0;">
+        <button class="boton-toggle" onclick="alternarFAQ(this)">Cuenta y seguridad <span class="flecha">&#9654;</span></button>
+        <div class="contenido-faq">
+          <ul>
+            <li>¿Cómo creo una cuenta en Art Dayz?</li>
+            <li>¿Cómo restablezco mi contraseña?</li>
+            <li>¿Puedo cambiar mi nombre de usuario?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item-faq" style="background-color:#ffe6f0;">
+        <button class="boton-toggle" onclick="alternarFAQ(this)">Compras y ventas <span class="flecha">&#9654;</span></button>
+        <div class="contenido-faq">
+          <ul>
+            <li>¿Cómo compro una ilustración en Art Dayz?</li>
+            <li>¿Cómo vendo mis ilustraciones en la plataforma?</li>
+            <li>¿Cuánto cobra Art Dayz de comisión?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item-faq" style="background-color:#ffe6f0;">
+        <button class="boton-toggle" onclick="alternarFAQ(this)">Pagos y reembolsos <span class="flecha">&#9654;</span></button>
+        <div class="contenido-faq">
+          <ul>
+            <li>¿Cuáles son los métodos de pago aceptados?</li>
+            <li>¿Cómo solicito un reembolso?</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item-faq" style="background-color:#ffe6f0;">
+        <button class="boton-toggle" onclick="alternarFAQ(this)">Publicaciones y arte <span class="flecha">&#9654;</span></button>
+        <div class="contenido-faq">
+          <ul>
+            <li>¿Qué tipo de arte puedo publicar?</li>
+            <li>¿Puedo editar una publicación después de subirla?</li>
+            <li>¿Cómo destaco mis obras en la plataforma?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="iconos-redes">
+      <img src="facebook.png" alt="Facebook" />
+      <img src="twitter.png" alt="Twitter" />
+      <img src="instagram.png" alt="Instagram" />
+      <img src="discord.png" alt="Discord" />
+      <img src="youtube.png" alt="YouTube" />
+      <img src="tiktok.png" alt="TikTok" />
+      <img src="linkedin.png" alt="LinkedIn" />
+      <img src="pinterest.png" alt="Pinterest" />
+    </div>
+    <p>Art Dayz</p>
+  </footer>
+
+  <script src="soporteP.js"></script>
 </body>
 </html>
+

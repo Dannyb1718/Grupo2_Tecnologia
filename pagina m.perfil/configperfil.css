@@ -4,12 +4,11 @@ body {
     color: #333;
   }
   
-  /* Header igual al de soporte */
+  /* Header*/
   header {
     background-color: #c9c1e5;
     padding: 16px 32px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-    border-radius: 0; /* Se elimina el borde redondeado inferior */
   }
   
   .header-top {
@@ -22,7 +21,7 @@ body {
   .logo {
     font-size: 32px;
     font-weight: 800;
-    color: #38394a; /* Se cambia el color rosa a gris oscuro */
+    color: #38394a; 
   }
   
   .actions {
