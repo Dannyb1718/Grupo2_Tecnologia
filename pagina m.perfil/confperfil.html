@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Perfil - ARTDAYS</title>
-  <link rel="stylesheet" href="mperfil.css"/>
+  <title>Configuración - ARTDAYS</title>
+  <link rel="stylesheet" href="configperfil.css"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -37,7 +37,7 @@
       <aside class="sidebar">
         <img src="foto-usuario.png" alt="Foto de perfil del usuario" class="foto-perfil" />
         <nav class="menu-lateral">
-          <button class="menu-icon active" aria-label="Ver perfil">
+          <button class="menu-icon" aria-label="Ver perfil">
             <img src="icono-perfil.png" alt="Icono Perfil" />
             <span>Perfil</span>
           </button>
@@ -45,7 +45,7 @@
             <img src="icono-contraseña.png" alt="Icono Contraseña" />
             <span>Contraseña</span>
           </button>
-          <button class="menu-icon" aria-label="Configuración de seguridad">
+          <button class="menu-icon active" aria-label="Configuración de seguridad">
             <img src="icono-configuracion.png" alt="Icono Configuración" />
             <span>Configuración</span>
           </button>
@@ -55,37 +55,49 @@
           </button>
         </nav>
       </aside>
-  
+
       <!-- Lado derecho -->
       <section class="perfil-formulario">
         <div class="perfil-header">
-          <h1>Cuenta</h1>
-          <img src="icono-cuenta.png" alt="Icono de cuenta" />
+          <h1>Configuración</h1>
+          <img src="icono-configuracion.png" alt="Icono de configuración" />
         </div>
+
         <form>
+          <!-- Privacidad del perfil -->
           <div class="campo">
-            <label for="usuario">Nombre de usuario</label>
-            <input type="text" id="usuario" value="emily123" />
+            <label for="privacidad">Privacidad del perfil</label>
+            <select id="privacidad">
+              <option value="todos">Todos pueden verla</option>
+              <option value="solo_yo">Solo yo</option>
+              <option value="seguidores">Solo seguidores</option>
+            </select>
+            <small>Controla quién puede ver tu perfil.</small>
           </div>
+
+          <!-- Indexación -->
           <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" value="Emily" />
+            <label for="indexacion">Evitar indexación por motores de búsqueda</label>
+            <select id="indexacion">
+              <option value="no">No</option>
+              <option value="si">Sí</option>
+            </select>
+            <small>Evita que tu perfil aparezca en resultados de búsqueda como Google.</small>
           </div>
+
+          <!-- Descargar datos -->
+          <hr style="margin: 30px 0; border: 0; border-top: 1px solid #ccc;">
+          <h2 style="color: #6a1b9a;">Descargar tus datos</h2>
+          <p>Introduce tu contraseña actual para confirmar una nueva exportación de tus datos personales.</p>
           <div class="campo">
-            <label for="apellido">Apellidos</label>
-            <input type="text" id="apellido" value="Mora Llanos" />
+            <label for="clave-descarga">Contraseña actual</label>
+            <input type="password" id="clave-descarga" placeholder="Ingresa tu contraseña" />
           </div>
-          <div class="campo">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" value="mora.amy@gmail.com" />
-          </div>
-          <button type="submit" class="btn-actualizar">Actualizar datos</button>
+          <button type="submit" class="btn-actualizar">Descargar los datos</button>
         </form>
       </section>
     </div>
   </main>
-  
-  
 
   <footer class="footer">
     <div class="social-icons">

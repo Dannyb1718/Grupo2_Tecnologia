@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Perfil - ARTDAYS</title>
+  <title>Cambiar Contraseña - ARTDAYS</title>
   <link rel="stylesheet" href="mperfil.css"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -37,11 +37,11 @@
       <aside class="sidebar">
         <img src="foto-usuario.png" alt="Foto de perfil del usuario" class="foto-perfil" />
         <nav class="menu-lateral">
-          <button class="menu-icon active" aria-label="Ver perfil">
+          <button class="menu-icon" aria-label="Ver perfil">
             <img src="icono-perfil.png" alt="Icono Perfil" />
             <span>Perfil</span>
           </button>
-          <button class="menu-icon" aria-label="Cambiar contraseña">
+          <button class="menu-icon active" aria-label="Cambiar contraseña">
             <img src="icono-contraseña.png" alt="Icono Contraseña" />
             <span>Contraseña</span>
           </button>
@@ -59,33 +59,30 @@
       <!-- Lado derecho -->
       <section class="perfil-formulario">
         <div class="perfil-header">
-          <h1>Cuenta</h1>
-          <img src="icono-cuenta.png" alt="Icono de cuenta" />
+          <h1>Cambiar contraseña</h1>
+          <img src="icono-contraseña.png" alt="Icono de contraseña" />
         </div>
         <form>
           <div class="campo">
-            <label for="usuario">Nombre de usuario</label>
-            <input type="text" id="usuario" value="emily123" />
+            <label for="actual">Contraseña actual</label>
+            <input type="password" id="actual" placeholder="Ingresa tu contraseña actual" />
+            <small>Es necesaria para verificar tu identidad.</small>
           </div>
           <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" value="Emily" />
+            <label for="nueva">Nueva contraseña</label>
+            <input type="password" id="nueva" placeholder="Crea una nueva contraseña" />
+            <small>Debe tener al menos 8 caracteres.</small>
           </div>
           <div class="campo">
-            <label for="apellido">Apellidos</label>
-            <input type="text" id="apellido" value="Mora Llanos" />
+            <label for="confirmar">Confirmar contraseña</label>
+            <input type="password" id="confirmar" placeholder="Vuelve a escribir la nueva contraseña" />
+            <small>Asegúrate de que ambas coincidan.</small>
           </div>
-          <div class="campo">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" value="mora.amy@gmail.com" />
-          </div>
-          <button type="submit" class="btn-actualizar">Actualizar datos</button>
+          <button type="submit" class="btn-actualizar">Actualizar la contraseña</button>
         </form>
       </section>
     </div>
   </main>
-  
-  
 
   <footer class="footer">
     <div class="social-icons">
