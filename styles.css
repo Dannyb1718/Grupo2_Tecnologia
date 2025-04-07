@@ -217,6 +217,7 @@ header {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+
 .categoria img {
     width: 200px;
     height: 200px;
@@ -234,6 +235,9 @@ header {
     margin-bottom: 10px;
     transition: all 0.3s ease;
 }
+
+
+
 .categoria:hover img {
     border: 3px solid #b8b4e7;
     box-shadow: 0 0 10px rgba(110, 106, 158, 0.5);
