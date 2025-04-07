@@ -285,6 +285,7 @@ header {
 
 .info-boxes {
     margin-top: 30px;
+    margin-left: 50px;
     flex: 1;
     min-width: 300px;
     max-width: 800px;
