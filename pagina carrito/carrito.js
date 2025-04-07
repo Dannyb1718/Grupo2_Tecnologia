@@ -1,3 +1,11 @@
+// Menú hamburguesa
+const hamburguesa = document.getElementById("hamburguesa");
+const menu = document.getElementById("elementos-menu");
+
+hamburguesa.addEventListener("click", () => {
+  menu.classList.toggle("mostrar");
+});
+
 const listaProductos = document.getElementById("listaProductos");
 const total = document.getElementById("total");
 
@@ -6,13 +14,13 @@ let carrito = [
     id: 1,
     nombre: "Ilustración Fantasía",
     precio: 30000,
-    imagen: "img1.jpg"
+    imagen: "imagenesCarrito/Fantasia.jpeg"
   },
   {
     id: 2,
     nombre: "Retrato Digital",
     precio: 45000,
-    imagen: "img2.jpg"
+    imagen: "imagenesCarrito/retrato.jpg"
   }
 ];
 
@@ -51,12 +59,3 @@ function eliminarProducto(id) {
 
 // Inicial
 renderizarCarrito();
-
-
-  // Menú hamburguesa
-  const hamburguesa = document.getElementById("hamburguesa");
-  const menu = document.getElementById("elementos-menu");
-  
-  hamburguesa.addEventListener("click", () => {
-    menu.classList.toggle("mostrar");
-  });
