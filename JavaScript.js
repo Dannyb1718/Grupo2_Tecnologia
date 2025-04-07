@@ -17,3 +17,6 @@ let currentSlide = 0;
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
   
+  function irPortafolio(){
+    window.location.href = "SubirPort/portfol.html";
+  }

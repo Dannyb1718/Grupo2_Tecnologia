@@ -8,6 +8,29 @@
   <link rel="stylesheet" href="portfol.css">
 </head>
 <body>
+    <header>
+        <div class="header-top">
+            <div class="logo">Art Dayz</div>
+            <div class="actions">
+                <button>Crear cuenta</button>
+                <button>Iniciar sesión</button>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar...">
+            </div>
+            <div class="navbar-right">
+                <ul class="nav-menu">
+                  <li><a href="#">Inicio</a></li>
+                  <li><a href="#">Buscar Artistas</a></li>
+                  <li><a href="#">Mis Pedidos</a></li>
+                  <li><a href="#">Perfil</a></li>
+                  <li><a href="#">Carrito</a></li>
+                  <li><a href="#">Soporte</a></li>
+                </ul>
+        </div>
+    </header>
   <div class="container">
     <div class="row">
       <div class="column">
@@ -77,7 +100,19 @@
 
     <button class="button agregar-btn">Agregar al carrito</button>
   </div>
-
+  <footer class="footer">
+    <div class="social-icons">
+      <img src="../Imagenes/faace.jpg" alt="Facebook" />
+      <img src="../Imagenes/x.jpg" alt="Twitter" />
+      <img src="../Imagenes/insta.jpg" alt="Instagram" />
+      <img src="../Imagenes/disc.jpg" alt="Discord" />
+      <img src="../Imagenes/yutu.jpg" alt="YouTube" />
+      <img src="../Imagenes/tiktok.jpg" alt="TikTok" />
+      <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
+      <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
+    </div>
+    <p>Art Dayz</p>
+  </footer>
   <script>
     document.querySelector('.agregar-btn').addEventListener('click', () => {
       alert('¡Formulario agregado al carrito!');
