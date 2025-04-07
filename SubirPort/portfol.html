@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Portafolio - Art Dayz</title>
+  <link href="" rel="stylesheet">
+  <link rel="stylesheet" href="portfol.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <label>Imágenes del Portafolio:</label><br>
+        <input type="file" multiple><br>
+        <button class="button">Subir</button>
+      </div>
+      <div class="column">
+        <label>Datos Personales:</label>
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Apellidos">
+        <textarea rows="4" placeholder="Introduzca una breve descripción"></textarea>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <label>Seleccione su categoría de Arte:</label>
+        <div class="checkboxes">
+          <label><input type="checkbox"> Dibujo Digital</label>
+          <label><input type="checkbox"> Dibujo Tradicional</label>
+          <label><input type="checkbox"> Modelado 3D</label>
+          <label><input type="checkbox"> Animación 3D</label>
+        </div>
+        <div class="tag-select">
+          <input type="text" placeholder="otro">
+          <button class="add-btn">Eliminar</button>
+        </div>
+      </div>
+
+      <div class="column">
+        <label>Rango de Precios:</label>
+        <div class="price-range">
+          <div class="price-inputs">
+            <input type="number" placeholder="-">
+            <span> - </span>
+            <input type="number" placeholder="$">
+          </div>
+          <div class="tag-select">
+            <button class="add-btn">Añadir otros rangos de precios</button>
+            <button class="add-btn">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <label>Tipo de Trabajos que Ofrece:</label>
+      <div class="row">
+        <div class="column checkboxes">
+          <label><input type="checkbox"> Arte Furry</label>
+          <label><input type="checkbox"> Estructuras complicadas</label>
+          <label><input type="checkbox"> Realismo</label>
+          <label><input type="checkbox"> Anime - Manga</label>
+        </div>
+        <div class="column checkboxes">
+          <label><input type="checkbox"> Cartoon</label>
+          <label><input type="checkbox"> Escenarios</label>
+          <label><input type="checkbox"> Mechas</label>
+          <div class="tag-select">
+            <input type="text" placeholder="otro">
+            <button class="add-btn">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="button agregar-btn">Agregar al carrito</button>
+  </div>
+
+  <script>
+    document.querySelector('.agregar-btn').addEventListener('click', () => {
+      alert('¡Formulario agregado al carrito!');
+    });
+  </script>
+</body>
+</html>
