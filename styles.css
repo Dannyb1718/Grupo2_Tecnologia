@@ -238,16 +238,24 @@ header {
 .categoria:hover {
     background-color: #322955; /* un tono más oscuro */
 }
+
 .Portafolio {
-    justify-content: flex-start;
-    flex: 1;
-    min-width: 300px;
-    max-width: 740px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    margin-left: 120px;
+  text-align: center;
+}
+
+.Portafolio-container {
+  max-width: 100%;
+  padding: 0 1rem; 
+  box-sizing: border-box;
+}
+
+.Portafolio img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px; 
+  max-width: 1000px; 
+  margin: 0 auto;
 }
 
 .upload-box {
@@ -280,7 +288,7 @@ header {
 }
 
 .upload-btn:hover {
-    background-color: #6de9b9;
+    background-color: #9d62fc;
 }
 
 .info-boxes {
@@ -291,6 +299,7 @@ header {
     max-width: 800px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
