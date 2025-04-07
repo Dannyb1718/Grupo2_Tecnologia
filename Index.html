@@ -9,10 +9,10 @@
     <body>
         <header>
             <div class="header-top">
-                <div class="logo">Art Dayz</div>
+                <div  onclick="irAInicio()" class="logo">Art Dayz</div>
                 <div class="actions">
-                    <button>Crear cuenta</button>
-                    <button>Iniciar sesión</button>
+                    <button onclick = "IraCrear()"> Crear cuenta</button>
+                    <button onclick = "irAInicioS()">Iniciar sesión</button>
                 </div>
             </div>
             <div class="header-bottom">
@@ -21,12 +21,12 @@
                 </div>
                 <div class="navbar-right">
                     <ul class="nav-menu">
-                      <li><a href="#">Inicio</a></li>
-                      <li><a href="#">Buscar Artistas</a></li>
-                      <li><a href="#">Mis Pedidos</a></li>
-                      <li><a href="#">Perfil</a></li>
-                      <li><a href="#">Carrito</a></li>
-                      <li><a href="#">Soporte</a></li>
+                      <li><a onclick="irAInicio()" href="#">Inicio</a></li>
+                      <li><a onclick="irAGal()" href="#">Buscar Artistas</a></li>
+                      <li><a onclick="irAPedid()" href="#">Mis Pedidos</a></li>
+                      <li><a onclick="irAPerfil()" href="#">Perfil</a></li>
+                      <li><a onclick="irACarr()" href="#">Carrito</a></li>
+                      <li><a onclick="irASopor()"href="#">Soporte</a></li>
                     </ul>
             </div>
         </header>
@@ -42,9 +42,9 @@
                 <button class="next" onclick="moveSlide(1)">❯</button>
             </div>
             <div class="categories">
-                <span>ARTISTAS FREELANCE</span>
-                <span>CONTRATAR UN SERVICIO</span>
-                <span>CONVIÉRTETE EN ARTISTA</span>
+                <span onclick="irAGal()">ARTISTAS FREELANCE</span>
+                <span onclick="irAGal()"> CONTRATAR UN SERVICIO</span>
+                <span onclick="irPortafolio()" >CONVIÉRTETE EN ARTISTA</span>
                 <span>COMUNIDAD Y EVENTOS</span>
             </div>
         </section>
@@ -54,30 +54,30 @@
         <section class="categorias">
             <div class="categoria">               
                 <span class="titulo">Dibujo tradicional</span>            
-                <img src="Imagenes/Tradicional.jpg" alt="Dibujo tradicional" >
+                <img src="Imagenes/Tradicional.jpg" alt="Dibujo tradicional"onclick="irADibujoT()" >
             
             </div>
             <div class="categoria">
                 <span class="titulo">Dibujo digital</span>
                 
-                <img src="Imagenes/digital.jpg" alt="Dibujo digital" onclick="irADibujo()">
+                <img src="Imagenes/digital.jpg" alt="Dibujo digital" onclick="irADibujoD()">
             </div>
             <div class="categoria">
                 <span class="titulo">Modelado 3D</span>
-                <img src="Imagenes/modelado3d.jpg" alt="Modelado 3D">
+                <img src="Imagenes/modelado3d.jpg" alt="Modelado 3D"onclick="irAModelado()">
             </div>
             <div class="categoria">
                 <span class="titulo">Animación 3D</span>
-                <img src="Imagenes/animacion.jpg" alt="Animación 3D">
+                <img src="Imagenes/animacion.jpg" alt="Animación 3D"onclick="irAAnima()">
             </div>
             <div class="categoria">
                 <span class="titulo">Galería de Artistas</span>
-                <img src="Imagenes/galeria.jpg" alt="Galería de Artistas">
+                <img src="Imagenes/galeria.jpg" alt="Galería de Artistas"onclick="irAGal()">
             </div>
         </section>      
         <section class="Portafolio-section">
             <div class="Portafolio">
-                <img src="Imagenes/Portafolio.jpg" alt="Portafolio">
+                <img src="Imagenes/Portafolio.jpg" alt="Portafolio" onclick="irPortafolio()">
                 <div class="upload-box">
                     <div class="upload-title">Sube tu portafolio</div>
                     <button onclick="irPortafolio()"class="upload-btn">AQUÍ</button>
@@ -93,8 +93,8 @@
                     <p>Ser una de las plataformas de referencia para la contratación de artistas globalmente, promoviendo el talento nacional e internacional y fomentando el crecimiento de la economía de los artistas.</p>
                 </div>
                 <div class="promo-artista">
-                    <img src="Imagenes/FondoMision.jpg" alt="Conviértete en artista">
-                    <div class="promo-texto">Conviértete en artista con ArtDays</div>
+                    <img src="Imagenes/FondoMision.jpg" alt="Conviértete en artista" onclick="irPortafolio()">
+                    <div class="promo-texto" >Conviértete en artista con ArtDays</div>
                   </div>
                   
             </div>
@@ -114,7 +114,7 @@
           <img src="Imagenes/linke.jpg" alt="LinkedIn" />
           <img src="Imagenes/pinterest.jpg" alt="Pinterest" />
         </div>
-        <p>Art Dayz</p>
+        <p onclick="irAInicio()">Art Dayz</p>
       </footer>
         <script src="JavaScript.js"></script>
     </body>

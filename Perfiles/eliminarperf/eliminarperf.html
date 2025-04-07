@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eliminar Cuenta - Art Dayz</title>
-  <link rel="stylesheet" href="mperfil.css"/>
+  <link rel="stylesheet" href="eliminarperf.css"/>
 </head>
 <body>
   <header>
     <div class="encabezado-superior">
-      <div class="logo">Art Dayz</div>
+      <div onclick="irAInicio()" class="logo">Art Dayz</div>
       <div class="acciones">
-        <button>Crear cuenta</button>
-        <button>Iniciar sesión</button>
+        <button onclick = "IraCrear()">Crear cuenta</button>
+        <button onclick = "irAInicioS()">Iniciar sesión</button>
       </div>
     </div>
     <div class="encabezado-inferior">
@@ -22,12 +22,12 @@
       <nav class="menu-principal" aria-label="Menú principal">
         <div class="hamburguesa" id="hamburguesa">&#9776;</div>
         <ul id="elementos-menu">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Buscar Artistas</a></li>
-          <li><a href="#">Mis Pedidos</a></li>
-          <li><a href="#">Perfil</a></li>
-          <li><a href="#">Carrito</a></li>
-          <li><a href="#">Soporte</a></li>
+          <li><a onclick="irAInicio()" href="#">Inicio</a></li>
+          <li><a onclick="irAGal()" href="#">Buscar Artistas</a></li>
+          <li><a onclick="irAPedid()" href="#">Mis Pedidos</a></li>
+          <li><a onclick="irAPerfil()" href="#">Perfil</a></li>
+          <li><a onclick="irACarr()" href="#">Carrito</a></li>
+          <li><a onclick="irASopor()"href="#">Soporte</a></li>
         </ul>
       </nav>
     </div>
@@ -36,22 +36,22 @@
   <main class="contenedor-perfil">
     <div class="contenido-perfil">
       <aside class="barra-lateral">
-        <img src="imagenes_mperfil/portada-foto-perfil.jpg" alt="Foto de perfil del usuario" class="foto-perfil" />
+        <img src="../imagenes_mperfil/portada-foto-perfil.jpg" alt="Foto de perfil del usuario" class="foto-perfil" />
         <nav class="menu-lateral">
           <button class="icono-menu" aria-label="Ver perfil">
-            <img src="imagenes_mperfil/PERFILICONO.png" alt="Icono Perfil" />
+            <img src="../imagenes_mperfil/PERFILICONO.png" alt="Icono Perfil" onclick="irAPerfil()"/>
             <span>Perfil</span>
           </button>
           <button class="icono-menu" aria-label="Cambiar contraseña">
-            <img src="imagenes_mperfil/seguro.png" alt="Icono Contraseña" />
+            <img src="../imagenes_mperfil/seguro.png" alt="Icono Contraseña"onclick="irAContra()" />
             <span>Contraseña</span>
           </button>
           <button class="icono-menu" aria-label="Configuración de seguridad">
-            <img src="imagenes_mperfil/editar.png" alt="Icono Configuración" />
+            <img src="../imagenes_mperfil/editar.png" alt="Icono Configuración" onclick="irAConfi()"/>
             <span>Configuración</span>
           </button>
           <button class="icono-menu activo" aria-label="Eliminar cuenta">
-            <img src="imagenes_mperfil/papelera.png" alt="Icono Eliminar" />
+            <img src="../imagenes_mperfil/papelera.png" alt="Icono Eliminar" onclick="irAElimin()"/>
             <span>Eliminar</span>
           </button>
         </nav>
@@ -60,7 +60,7 @@
       <section class="formulario-perfil">
         <div class="encabezado-perfil">
           <h1>Eliminar cuenta</h1>
-          <img src="imagenes_mperfil/papelera.png" alt="Icono Eliminar cuenta" />
+          <img src="../imagenes_mperfil/papelera.png" alt="Icono Eliminar cuenta" />
         </div>
 
         <p style="margin-bottom: 20px; color: #b71c1c; font-weight: 600;">
@@ -97,7 +97,7 @@
       <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
       <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
     </div>
-    <p>Art Dayz</p>
+    <p onclick="irAInicio()">Art Dayz</p>
   </footer>
 
   <script>
@@ -109,6 +109,6 @@
       });
     });
   </script>
-<script src="mperfil.js"></script>
+<script src="eliminarperf.js"></script>
 </body>
 </html>

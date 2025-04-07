@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mi Perfil - Art Dayz</title>
-  <link rel="stylesheet" href="mperfil.css"/>
+  <title>Cambiar Contraseña - Art Dayz</title>
+  <link rel="stylesheet" href="trasenaperfil.css"/>
 
 </head>
 <body>
   <header>
     <div class="encabezado-superior">
-      <div class="logo">Art Dayz</div>
+      <div onclick="irAInicio()" class="logo">Art Dayz</div>
       <div class="acciones">
-        <button>Crear cuenta</button>
-        <button>Iniciar sesión</button>
+        <button onclick = "IraCrear()">Crear cuenta</button>
+        <button onclick = "irAInicioS()">Iniciar sesión</button>
       </div>
     </div>
     <div class="encabezado-inferior">
@@ -23,12 +23,12 @@
       <nav class="menu-principal" aria-label="Menú principal">
         <div class="hamburguesa" id="hamburguesa">&#9776;</div>
           <ul id="elementos-menu">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Buscar Artistas</a></li>
-          <li><a href="#">Mis Pedidos</a></li>
-          <li><a href="#">Perfil</a></li>
-          <li><a href="#">Carrito</a></li>
-          <li><a href="#">Soporte</a></li>
+            <li><a onclick="irAInicio()" href="#">Inicio</a></li>
+            <li><a onclick="irAGal()" href="#">Buscar Artistas</a></li>
+            <li><a onclick="irAPedid()" href="#">Mis Pedidos</a></li>
+            <li><a onclick="irAPerfil()" href="#">Perfil</a></li>
+            <li><a onclick="irACarr()" href="#">Carrito</a></li>
+            <li><a onclick="irASopor()"href="#">Soporte</a></li>
         </ul>
       </nav>
     </div>
@@ -36,23 +36,24 @@
 
   <main class="contenedor-perfil">
     <div class="contenido-perfil">
+
       <aside class="barra-lateral">
-        <img src="imagenes_mperfil/portada-foto-perfil.jpg" alt="Foto de perfil del usuario" class="foto-perfil" />
+        <img src="../imagenes_mperfil/portada-foto-perfil.jpg" alt="Foto de perfil del usuario" class="foto-perfil" />
         <nav class="menu-lateral">
-          <button class="icono-menu activo" aria-label="Ver perfil">
-            <img src="imagenes_mperfil/PERFILICONO.png" alt="Icono Perfil" />
+          <button class="icono-menu" aria-label="Ver perfil">
+            <img src="../imagenes_mperfil/PERFILICONO.png" alt="Icono Perfil" onclick="irAPerfil()" />
             <span>Perfil</span>
           </button>
-          <button class="icono-menu" aria-label="Cambiar contraseña">
-            <img src="imagenes_mperfil/seguro.png" alt="Icono Contraseña" />
+          <button class="icono-menu activo" aria-label="Cambiar contraseña">
+            <img src="../imagenes_mperfil/seguro.png" alt="Icono Contraseña" onclick="irAContra()"/>
             <span>Contraseña</span>
           </button>
           <button class="icono-menu" aria-label="Configuración de seguridad">
-            <img src="imagenes_mperfil/editar.png" alt="Icono Configuración" />
+            <img src="../imagenes_mperfil/editar.png" alt="Icono Configuración"onclick="irAConfi()" />
             <span>Configuración</span>
           </button>
           <button class="icono-menu" aria-label="Eliminar cuenta">
-            <img src="imagenes_mperfil/papelera.png" alt="Icono Eliminar" />
+            <img src="../imagenes_mperfil/papelera.png" alt="Icono Eliminar" onclick="irAElimin()" />
             <span>Eliminar</span>
           </button>
         </nav>
@@ -60,27 +61,26 @@
   
       <section class="formulario-perfil">
         <div class="encabezado-perfil">
-          <h1>Cuenta</h1>
-          <img src="imagenes_mperfil/PERFILICONO.png" alt="Icono de cuenta" />
+          <h1>Cambiar contraseña</h1>
+          <img src="../imagenes_mperfil/seguro.png" alt="Icono de contraseña" />
         </div>
         <form>
           <div class="campo">
-            <label for="usuario">Nombre de usuario</label>
-            <input type="text" id="usuario" value="emily123" />
+            <label for="actual">Contraseña actual</label>
+            <input type="password" id="actual" placeholder="Ingresa tu contraseña actual" />
+            <small>Es necesaria para verificar tu identidad.</small>
           </div>
           <div class="campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" value="Emily" />
+            <label for="nueva">Nueva contraseña</label>
+            <input type="password" id="nueva" placeholder="Crea una nueva contraseña" />
+            <small>Debe tener al menos 8 caracteres.</small>
           </div>
           <div class="campo">
-            <label for="apellido">Apellidos</label>
-            <input type="text" id="apellido" value="Mora Llanos" />
+            <label for="confirmar">Confirmar contraseña</label>
+            <input type="password" id="confirmar" placeholder="Vuelve a escribir la nueva contraseña" />
+            <small>Asegúrate de que ambas coincidan.</small>
           </div>
-          <div class="campo">
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" value="mora.amy@gmail.com" />
-          </div>
-          <button type="submit" class="boton-actualizar">Actualizar datos</button>
+          <button type="submit" class="boton-actualizar">Actualizar la contraseña</button>
         </form>
       </section>
     </div>
@@ -97,7 +97,7 @@
       <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
       <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
     </div>
-    <p>Art Dayz</p>
+    <p onclick="irAInicio()">Art Dayz</p>
   </footer>
 
   <script>
@@ -110,6 +110,6 @@
       });
     });
   </script>
-   <script src="mperfil.js"></script>
+   <script src="trasenaperfil.js"></script>
 </body>
 </html>

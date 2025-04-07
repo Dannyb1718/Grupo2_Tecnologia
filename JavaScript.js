@@ -19,8 +19,41 @@ let currentSlide = 0;
   
   function irPortafolio(){
     window.location.href = "SubirPort/portfol.html";
-  }function irADibujo() {
+  }
+  function irADibujoD() {
     window.location.href = "dibujodigital/dibujodigital.html";
   }
-
+  function irADibujoT() {
+    window.location.href = "dibujotrad/dibujotrad.html";
+  }
+  function irAModelado() {
+    window.location.href = "Modelado/mod.html";
+  }
+  function irAAnima() {
+    window.location.href = "Modelado A/moda.html";
+  }
+  function irAGal() {
+    window.location.href = "GaleriaDeArt/Galart.html";
+  }
+  function irAInicio() {
+    window.location.href = "index.html";
+  }
+  function irAPedid() {
+    window.location.href = "MisPedidos/pedidos.html";
+  }
+  function irASopor() {
+    window.location.href = "pagina soporte/soporteP.html";
+  }
+  function irACarr() {
+    window.location.href = "pagina carrito/carrito.html";
+  }
+  function irAPerfil() {
+    window.location.href = "";
+  }
+  function irACrear() {
+    /*window.location.href = "pagina carrito/carrito.html";*/
+  }
+  function irAinicioS() {
+    window.location.href = "IniciarSes/InicioSesion.html";
+  }
   

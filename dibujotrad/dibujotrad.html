@@ -9,10 +9,10 @@
     <body>
         <header>
             <div class="header-top">
-                <div class="logo">Art Dayz</div>
+                <div  onclick="irAInicio()" class="logo">Art Dayz</div>
                 <div class="actions">
-                    <button>Crear cuenta</button>
-                    <button>Iniciar sesión</button>
+                    <button onclick = "IraCrear()"> Crear cuenta</button>
+                    <button onclick = "irAInicioS()">Iniciar sesión</button>
                 </div>
             </div>
             <div class="header-bottom">
@@ -21,12 +21,12 @@
                 </div>
                 <div class="navbar-right">
                     <ul class="nav-menu">
-                      <li><a href="#">Inicio</a></li>
-                      <li><a href="#">Buscar Artistas</a></li>
-                      <li><a href="#">Mis Pedidos</a></li>
-                      <li><a href="#">Perfil</a></li>
-                      <li><a href="#">Carrito</a></li>
-                      <li><a href="#">Soporte</a></li>
+                        <li><a onclick="irAInicio()" href="#">Inicio</a></li>
+                        <li><a onclick="irAGal()" href="#">Buscar Artistas</a></li>
+                        <li><a onclick="irAPedid()" href="#">Mis Pedidos</a></li>
+                        <li><a onclick="irAPerfil()" href="#">Perfil</a></li>
+                        <li><a onclick="irACarr()" href="#">Carrito</a></li>
+                        <li><a onclick="irASopor()"href="#">Soporte</a></li>
                     </ul>
             </div>
         </header>
@@ -67,7 +67,7 @@
                     <img src="imagenestrad/aba 3.jfif" alt="Arte 3">
                 </div> 
 
-                <button class="ver-mas">Ver más</button>  
+                <button class="ver-mas" onclick="irAGal()">Ver más</button>  
                   
             </div> 
         </div>
@@ -92,7 +92,7 @@
                     <img src="imagenestrad/Mit 3.jpg" alt="Arte 3">
                 </div> 
 
-                <button class="ver-mas">Ver más</button>  
+                <button class="ver-mas" onclick="irAGal()">Ver más</button>  
                   
             </div> 
         </div>
@@ -116,7 +116,7 @@
                     <img src="imagenestrad/naru 3.jpg" alt="Arte 3">
                 </div> 
 
-                <button class="ver-mas">Ver más</button>  
+                <button class="ver-mas" onclick="irAGal()">Ver más</button>  
                   
             </div> 
         </div>
@@ -133,7 +133,7 @@
           <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
           <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
         </div>
-        <p>Art Dayz</p>
+        <p onclick="irAInicio()">Art Dayz</p>
     </footer>
     
     </div>
