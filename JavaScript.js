@@ -30,7 +30,7 @@ let currentSlide = 0;
     window.location.href = "Modelado/mod.html";
   }
   function irAAnima() {
-    window.location.href = "Modelado A/moda.html";
+    window.location.href = "Modelado-A/moda.html";
   }
   function irAGal() {
     window.location.href = "GaleriaDeArt/Galart.html";
@@ -48,12 +48,12 @@ let currentSlide = 0;
     window.location.href = "pagina carrito/carrito.html";
   }
   function irAPerfil() {
-    window.location.href = "";
+    window.location.href = "Perfiles/mperfil/mperfil.html";
   }
   function irACrear() {
     /*window.location.href = "pagina carrito/carrito.html";*/
   }
-  function irAinicioS() {
+  function irAInicioS() {
     window.location.href = "IniciarSes/InicioSesion.html";
   }
   

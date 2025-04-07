@@ -21,4 +21,11 @@
   function Agregar() {
       alert('¡Formulario agregado al carrito!');
   }
+
+  function irACrear() {
+    /*window.location.href = "pagina carrito/carrito.html";*/
+  }
+  function irAInicioS() {
+    window.location.href = "../IniciarSes/InicioSesion.html";
+  }
   
