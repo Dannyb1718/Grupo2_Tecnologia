@@ -8,7 +8,7 @@ body {
 header {
   background-color: #c9c1e5;
   padding: 16px 32px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .encabezado-superior {
@@ -61,7 +61,7 @@ header {
   font-size: 14px;
 }
 
-/*MENÚ PRINCIPAL*/
+/*MENÚ PRINCIPAL */
 .menu-principal ul {
   list-style: none;
   display: flex;
@@ -257,6 +257,13 @@ header {
   object-fit: contain;
 }
 
+.hamburguesa {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
 /*Responsive*/
 @media screen and (max-width: 768px) {
   /*perfil*/
@@ -291,8 +298,21 @@ header {
   }
 
   .menu-principal ul {
+    display: none;
     flex-direction: column;
-    align-items: flex-start;
+    gap: 10px;
+    background-color: #e0d7ff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-principal ul.mostrar {
+    display: flex;
+  }
+
+  .hamburguesa {
+    display: block;
   }
 
   .barra-busqueda input {

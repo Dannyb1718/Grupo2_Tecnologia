@@ -266,8 +266,29 @@ header {
   object-fit: contain;
 }
 
+.hamburguesa {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /*Responsive*/
 @media screen and (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+  
+  .barra-busqueda input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .acciones {
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
   .contenido-perfil {
     flex-direction: column;
     align-items: center;
@@ -293,6 +314,24 @@ header {
     text-align: center;
     gap: 10px;
   }
+
+  .menu-principal ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e0d7ff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-principal ul.mostrar {
+    display: flex;
+  }
+
+  .hamburguesa {
+    display: block;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -304,27 +343,5 @@ header {
 
   .iconos-sociales {
     justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
-    padding: 10px 20px;
-  }
-
-  .menu-principal ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .barra-busqueda input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .acciones {
-    justify-content: flex-start;
-    margin-top: 10px;
-    flex-wrap: wrap;
   }
 }
