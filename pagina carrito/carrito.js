@@ -2,6 +2,21 @@
 const hamburguesa = document.getElementById("hamburguesa");
 const menu = document.getElementById("elementos-menu");
 
+const finalizarCompra = document.getElementById("finalizarCompra");
+
+finalizarCompra.addEventListener("click", () => {
+  if (carrito.length === 0) {
+    alert("Tu carrito está vacío. Agrega productos antes de finalizar la compra.");
+  } else {
+    alert("¡Gracias por tu compra!");
+
+    // Vaciar carrito
+    carrito = [];
+    renderizarCarrito();
+  }
+});
+
+
 hamburguesa.addEventListener("click", () => {
   menu.classList.toggle("mostrar");
 });

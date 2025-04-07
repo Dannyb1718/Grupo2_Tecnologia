@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carrito de Compras - Art Dayz</title>
   <link rel="stylesheet" href="carrito.css" />
+
 </head>
 <body>
   <header>
@@ -17,11 +18,11 @@
     </div>
     <div class="encabezado-inferior">
       <div class="barra-busqueda">
-        <input type="text" placeholder="Buscar..." />
+        <input type="text" placeholder="Buscar..." aria-label="Buscar en el sitio"/>
       </div>
-      <nav class="menu-principal" aria-label="Menú principal"></nav>
+      <nav class="menu-principal" aria-label="Menú principal">
         <div class="hamburguesa" id="hamburguesa">&#9776;</div>
-        <ul id="elementos-menu">
+          <ul id="elementos-menu">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Buscar Artistas</a></li>
           <li><a href="#">Mis Pedidos</a></li>
@@ -41,7 +42,7 @@
     </div>
     <div class="resumen-carrito">
       <p><strong>Total:</strong> $<span id="total">0</span></p>
-      <button class="btn-finalizar">Finalizar Compra</button>
+      <button id="finalizarCompra" class="btn-finalizar">Finalizar Compra</button>
     </div>
   </main>
 
