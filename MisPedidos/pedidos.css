@@ -107,7 +107,7 @@ header {
   }
   
   .pedido {
-    background-color: #c6e6da;
+    background-color: #d39aff;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
@@ -139,7 +139,7 @@ header {
   }
   
   .cancelar {
-    background-color: #f44336;
+    background-color: #ff6f65;
     color: white;
     border: none;
     padding: 8px 16px;
@@ -148,7 +148,7 @@ header {
   }
   
   .detalles {
-    background-color: #7ad4c2;
+    background-color: #6b4cf5;
     color: white;
     border: none;
     padding: 8px 16px;

@@ -6,28 +6,28 @@
     menu.classList.toggle("mostrar");
   });
   function irPortafolio(){
-    window.location.href = "../SubirPort/portfol.html";
+    window.location.href = "../../SubirPort/portfol.html";
   }
   function irAGal() {
-    window.location.href = "../GaleriaDeArt/Galart.html";
+    window.location.href = "../../GaleriaDeArt/Galart.html";
   }
   function irAInicio() {
-    window.location.href = "../index.html";
+    window.location.href = "../../index.html";
   }
   function irAPedid() {
-    window.location.href = "../MisPedidos/pedidos.html";
+    window.location.href = "../../MisPedidos/pedidos.html";
   }
   function irASopor() {
-    window.location.href = "../pagina soporte/soporteP.html";
+    window.location.href = "../../pagina soporte/soporteP.html";
   }
   function irACarr() {
-    window.location.href = "../pagina carrito/carrito.html";
+    window.location.href = "../../pagina carrito/carrito.html";
   }
   function irACrear() {
     /*window.location.href = "pagina carrito/carrito.html";*/
   }
   function irAinicioS() {
-    window.location.href = "../IniciarSes/InicioSesion.html";
+    window.location.href = "../../IniciarSes/InicioSesion.html";
   }
   function irAPerfil() {
     window.location.href = "../mperfil/mperfil.html";

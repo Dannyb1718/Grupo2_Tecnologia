@@ -12,9 +12,9 @@ body {
     box-sizing: content-box;
 }
 
-/* ----- HEADER ----- */
+/* Encabezado */
 header {
-    background-color: #dddae7;
+    background-color: #c9c1e5;
     padding: 16px 32px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     border-radius: 0; /* Se elimina el borde redondeado inferior */
@@ -51,7 +51,7 @@ header {
   }
   
   .actions button:hover {
-    background-color: #8a679e;
+    background-color: #5a5fb9;
   }
   
   .header-bottom {
@@ -114,9 +114,10 @@ header {
   .container {
     margin-top: 200px;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 5rem; 
     background: white;
-    padding: 20px;
+    padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     border: 2px solid #ccc;
@@ -233,3 +234,91 @@ header {
     height: 32px;
     object-fit: contain;
   }
+
+
+  .hamburguesa {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+
+  /*RESPONSIVE*/
+@media (max-width: 768px) {
+
+  header {
+    padding: 10px 20px;
+  }
+  
+  .barra-busqueda input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .acciones {
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  .menu-principal ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e0d7ff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-principal ul.mostrar {
+    display: flex;
+  }
+
+  .hamburguesa {
+    display: block;
+  }
+   
+  .slider {
+    height: auto;
+  }
+
+  .slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  .categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .upload-section input[type="file"],
+  .upload-section button {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  footer .social-icons {
+    margin-top: 10px;
+  }
+
+  .upload-section {
+    padding: 10px;
+  }
+}

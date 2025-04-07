@@ -21,4 +21,19 @@
   function Agregar() {
       alert('¡Formulario agregado al carrito!');
   }
+
+  function irACrear() {
+    /*window.location.href = "pagina carrito/carrito.html";*/
+  }
+  function irAInicioS() {
+    window.location.href = "../IniciarSes/InicioSesion.html";
+  }
   
+
+    // Menú hamburguesa
+    const hamburguesa = document.getElementById("hamburguesa");
+    const menu = document.getElementById("elementos-menu");
+    
+    hamburguesa.addEventListener("click", () => {
+      menu.classList.toggle("mostrar");
+    });
