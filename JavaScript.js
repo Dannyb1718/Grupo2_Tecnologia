@@ -16,6 +16,11 @@ let currentSlide = 0;
     // Mover el contenedor de slides
     slides.style.transform = `translateX(-${currentSlide * 100}%)`;
   }
-  function irADibujo() {
+  
+  function irPortafolio(){
+    window.location.href = "SubirPort/portfol.html";
+  }function irADibujo() {
     window.location.href = "dibujodigital/dibujodigital.html";
   }
+
+  

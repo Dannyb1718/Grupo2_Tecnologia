@@ -1,0 +1,263 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #e6e4fb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Encabezado */
+header {
+    background-color: #c9c1e5;
+    padding: 16px 32px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .encabezado-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: #38394a; 
+  }
+  
+  .acciones {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .acciones button {
+    padding: 8px 16px;
+    background-color: #060830;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .acciones button:hover {
+    background-color: #5a5fb9;
+  }
+  
+  .encabezado-inferior {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .barra-busqueda input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: 240px;
+    font-size: 14px;
+  }
+  
+  /* MENÚ PRINCIPAL */
+  .menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .menu-principal a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .menu-principal a:hover {
+    background-color: #a67dff;
+  }
+
+  .contenedor {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .descripcion {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .pedidos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .pedido {
+    background-color: #c6e6da;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: row;
+  }
+  
+  .pedido-img {
+    width: 150px;
+    object-fit: cover;
+  }
+  
+  .pedido-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+  }
+  
+  .pedido-info p {
+    margin: 4px 0;
+  }
+  
+  .botones {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .cancelar {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .detalles {
+    background-color: #7ad4c2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #c9c1e5;
+    flex-wrap: wrap;
+  }
+  
+  .footer p {
+    font-weight: bold;
+    color: #38394a;
+    font-size: 18px;
+  }
+  
+  .iconos-redes {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .iconos-redes img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .hamburguesa {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /*Responsive*/
+  @media (max-width: 600px) {
+    .pedido {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .pedido-img {
+      width: 100%;
+      max-height: 200px;
+    }
+  
+    .pedido-info {
+      padding: 10px;
+    }
+  
+    .botones {
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px 20px;
+    }
+  
+    .barra-busqueda input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    
+    .acciones {
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    }
+  
+    .menu-principal ul {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      background-color: #e0d7ff;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 10px;
+    }
+  
+    .menu-principal ul.mostrar {
+      display: flex;
+    }
+  
+    .hamburguesa {
+      display: block;
+    }
+  }
+
+@media (max-width: 1024px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+    }
+  
+    .iconos-redes {
+      justify-content: center;
+    }
+  }

@@ -1,0 +1,493 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #c9c1e5;
+  padding: 16px 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.encabezado-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  color: #38394a; 
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.acciones button {
+  padding: 8px 16px;
+  background-color: #060830;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.acciones button:hover {
+  background-color: #5a5fb9;
+}
+
+.encabezado-inferior {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.barra-busqueda input {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 240px;
+  font-size: 14px;
+}
+
+/* MENÚ PRINCIPAL */
+.menu-principal ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.menu-principal a {
+  text-decoration: none;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+  font-weight: 500;
+}
+
+.menu-principal a:hover {
+  background-color: #a67dff;
+}
+
+/*SECCIÓN PRINCIPAL*/
+
+.contenedor-principal {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*SECCIÓN DE SOPORTE*/
+
+.seccion-soporte {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+/* LADO DEL FORMULARIO */
+
+.lado-formulario h2 {
+  margin-bottom: 12px;
+  color: #150438;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lado-formulario p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #555;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  font-size: 15px;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form button {
+  background-color: #5934ff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #4318c2;
+}
+
+/*SECCIÓN DE INFORMACIÓN*/
+
+.lado-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.caja-chatbot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fce4ec;
+  padding: 24px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.caja-chatbot img {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.caja-chatbot span {
+  font-weight: bold;
+  color: #150438;
+}
+
+/*ICONOS DE CONTACTO*/
+.iconos-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconos-contacto img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.iconos-contacto span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Agrupar cada ícono con su texto */
+.iconos-contacto > img,
+.iconos-contacto > span {
+  display: inline-block;
+}
+
+/*PREGUNTAS FRECUENTES*/
+
+.faq h3 {
+  font-size: 26px;
+  margin-bottom: 24px;
+  color: #2e0da5;
+  text-align: center;
+  font-weight: 700;
+}
+
+.item-faq {
+  margin-bottom: 18px;
+  padding: 16px 24px;
+  border-radius: 18px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.boton-toggle {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.boton-toggle .flecha {
+  font-size: 18px;
+}
+
+.contenido-faq {
+  display: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #2e0da5;
+}
+
+.contenido-faq.visible {
+  display: block;
+}
+
+/* Chatbot */
+.ventana-chatbot {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  width: 300px;
+  max-height: 400px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.ventana-chatbot.open {
+  display: flex;
+}
+
+.cabecera-chat {
+  background-color: #5934ff;
+  color: #fff;
+  padding: 12px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.cuerpo-chat {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.entrada-chat {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.entrada-chat input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+}
+
+.entrada-chat button {
+  background-color: #5934ff;
+  color: white;
+  border: none;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.mensaje-bot {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.avatar-bot {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.burbuja-mensaje {
+  background: #f1f1f1;
+  padding: 10px 14px;
+  border-radius: 18px;
+}
+
+.mensaje-usuario {
+  background-color: #dbeafe;
+  padding: 10px 14px;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  align-self: flex-end;
+  max-width: 80%;
+}
+
+.cerrar-chatbot {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Menú Responsive */
+.hamburguesa {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .barra-busqueda input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .acciones {
+    justify-content: flex-start;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+
+  form button {
+    width: 100%;
+  }
+
+  .item-faq {
+    padding: 12px;
+  }
+
+  .caja-chatbot {
+    width: 100%;
+  }
+
+  .seccion-soporte {
+    grid-template-columns: 1fr;
+  }
+
+  .grupo-formulario.doble {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario-estilizado input,
+  .formulario-estilizado textarea {
+    width: 100%;
+  }
+
+  .iconos-contacto {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .menu-principal ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #e0d7ff;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-principal ul.mostrar {
+    display: flex;
+  }
+
+  .hamburguesa {
+    display: block;
+  }
+
+  .iconos-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconos-contacto img,
+  .iconos-contacto span {
+    display: flex;
+    align-items: center;
+  }
+
+  .iconos-contacto img {
+    margin-right: 10px;
+  }
+
+  /* Para mantener cada ícono con su texto en una misma línea */
+  .iconos-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .iconos-contacto div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+}
+
+/*FOOTER*/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #c9c1e5;
+  flex-wrap: wrap;
+}
+
+.footer p {
+  font-weight: bold;
+  color: #38394a;
+  font-size: 18px;
+}
+
+.iconos-redes {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.iconos-redes img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/*RESPONSIVE GENERAL*/
+
+@media (max-width: 1024px) {
+  .seccion-soporte {
+    grid-template-columns: 1fr;
+  }
+
+  .lado-info {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .iconos-redes {
+    justify-content: center;
+  }
+}
