@@ -1,8 +1,19 @@
-let currentSlide = 0; // Índice de la diapositiva actual
-const slides = document.querySelectorAll(".slide");
+let currentSlide = 0;
 
-function moveSlide(direction) {
-    slides[currentSlide].classList.remove("active"); // Oculta la diapositiva actual
-    currentSlide = (currentSlide + direction + slides.length) % slides.length; // Calcula el índice de la nueva diapositiva
-    slides[currentSlide].classList.add("active"); // Muestra la nueva diapositiva
-}
+  function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = document.querySelectorAll('.slide').length;
+
+    currentSlide += direction;
+
+    // Si se pasa del final, vuelve al principio, y viceversa
+    if (currentSlide >= totalSlides) {
+      currentSlide = 0;
+    } else if (currentSlide < 0) {
+      currentSlide = totalSlides - 1;
+    }
+
+    // Mover el contenedor de slides
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+  
