@@ -8,11 +8,12 @@
     </head>
     <body>
         <header>
+          <h1></h1>
             <div class="encabezado-superior">
               <div onclick="irAInicio()" class="logo">Art Dayz</div>
               <div class="acciones">
-                <button>Crear cuenta</button>
-                <button>Iniciar sesión</button>
+                <button onclick="irACrear()"> Crear cuenta</button>
+                <button onclick="irAinicioS()">Iniciar sesión</button>
               </div>
             </div>
             <div class="encabezado-inferior">
@@ -38,7 +39,7 @@
                 <div class="artist-card">
                     <img src="ImgGaleria/thy p.jpg" alt="Foto de perfil" class="profile-pic">
                     <div class="artist-info">
-                        <h2>Nombre: thyzzem</h2>
+                        <h3>Nombre: thyzzem</h3>
                         <p><strong>Especialidad:</strong>Dibujo cartoon</p>
                         <p><strong>Calificación:</strong> ★★★☆☆</p>
                         <p class="description">Especializada en el estilo cartoon con una mezcla de tonos suaves e ingeniosos sabe como hacer una buena ilusitracion.</p>
@@ -57,9 +58,11 @@
 
                 </div>
                 <div class="review">
+                  <h5>
                     <p><strong>Última reseña:</strong> ★☆☆☆☆</p>
+                  </h5>
                     <p>No me termino de convencer su trabajo.</p> 
-                            
+                  
                 </div>
                 <div class="cart-container">
                     <button class="cart-button">Agregar al carrito</button>
@@ -77,7 +80,9 @@
               <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
               <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
             </div>
+            <h4>
             <p onclick="irAInicio()">Art Dayz</p>
+          </h4>
         </footer>
     
     </div>

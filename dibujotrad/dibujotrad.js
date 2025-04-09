@@ -44,7 +44,7 @@ function irPortafolio(){
     window.location.href = "../Perfiles/mperfil/mperfil.html";
   }
   function irACrear() {
-    /*window.location.href = "pagina carrito/carrito.html";*/
+    window.location.href = "../CrearCuen/CrearCuen.html";
   }
   function irAinicioS() {
     window.location.href = "IniciarSes/InicioSesion.html";

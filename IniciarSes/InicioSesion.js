@@ -10,6 +10,3 @@ btn.addEventListener("click", function() {
     alert("¡Inicio de sesión simulado!");
   }
 });
-function irAinicio() {
-  window.location.href = "../Index.html";
-}
