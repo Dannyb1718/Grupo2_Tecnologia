@@ -1,4 +1,4 @@
-## Artdays - Plataforma para artistas
+## Art Dayz - Plataforma para artistas
 Artdays es un sitio web pensado para la comunidad artística, donde los usuarios pueden compartir sus obras, recibir comisiones y visualizar el trabajo de otros artistas. 
 La estructura del proyecto está organizada por carpetas, cada una correspondiente a una sección específica del sitio, con sus respectivos archivos HTML, CSS y JS.
 
