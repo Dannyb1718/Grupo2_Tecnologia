@@ -24,7 +24,7 @@ const hamburguesa = document.getElementById("hamburguesa");
     window.location.href = "../../pagina carrito/carrito.html";
   }
   function irACrear() {
-    window.location.href = "../CrearCuen/CrearCuen.html";
+    window.location.href = "../../CrearCuen/CrearC.html";
   }
   function irAinicioS() {
     window.location.href = "../../IniciarSes/InicioSesion.html";

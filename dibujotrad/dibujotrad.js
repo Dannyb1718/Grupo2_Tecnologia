@@ -44,10 +44,10 @@ function irPortafolio(){
     window.location.href = "../Perfiles/mperfil/mperfil.html";
   }
   function irACrear() {
-    window.location.href = "../CrearCuen/CrearCuen.html";
+    window.location.href = "../CrearCuen/CrearC.html";
   }
   function irAinicioS() {
-    window.location.href = "IniciarSes/InicioSesion.html";
+    window.location.href = "../IniciarSes/InicioSesion.html";
   }
   
 

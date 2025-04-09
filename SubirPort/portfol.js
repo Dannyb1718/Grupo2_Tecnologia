@@ -23,7 +23,7 @@
   }
 
   function irACrear() {
-    /*window.location.href = "pagina carrito/carrito.html";*/
+    window.location.href = "../CrearCuen/CrearC.html";
   }
   function irAInicioS() {
     window.location.href = "../IniciarSes/InicioSesion.html";

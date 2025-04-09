@@ -51,7 +51,7 @@ let currentSlide = 0;
     window.location.href = "Perfiles/mperfil/mperfil.html";
   }
   function irACrear() {
-    /*window.location.href = "pagina carrito/carrito.html";*/
+    window.location.href = "CrearCuen/CrearC.html";
   }
   function irAInicioS() {
     window.location.href = "IniciarSes/InicioSesion.html";
