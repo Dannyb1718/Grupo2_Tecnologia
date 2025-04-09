@@ -8,6 +8,7 @@
     </head>
     <body>
         <header>
+          <h1></h1>
             <div class="encabezado-superior">
             <div onclick="irAInicio()" class="logo">Art Dayz</div>
               <div class="acciones">
@@ -56,34 +57,34 @@
         <div class="explorar">
             <p>¿Qué te gustaría explorar?</p>
         </div>
-        <section class="categorias">
+        <section onclick="irADibujoT()" class="categorias">
             <div class="categoria">               
                 <span class="titulo">Dibujo tradicional</span>            
                 <img src="Imagenes/Tradicional.jpg" alt="Dibujo tradicional" >
             
             </div>
-            <div class="categoria">
+            <div  onclick="irADibujoD()" class="categoria">
                 <span class="titulo">Dibujo digital</span>
                 
-                <img src="Imagenes/digital.jpg" alt="Dibujo digital" onclick="irADibujoD()">
+                <img src="Imagenes/digital.jpg" alt="Dibujo digital">
             </div>
-            <div class="categoria">
+            <div onclick="irAModelado()" class="categoria">
                 <span class="titulo">Modelado 3D</span>
-                <img src="Imagenes/modelado3d.jpg" alt="Modelado 3D"onclick="irAModelado()">
+                <img src="Imagenes/modelado3d.jpg" alt="Modelado 3D">
             </div>
-            <div class="categoria">
+            <div onclick="irAAnima()" class="categoria">
                 <span class="titulo">Animación 3D</span>
-                <img src="Imagenes/animacion.jpg" alt="Animación 3D"onclick="irAAnima()">
+                <img src="Imagenes/animacion.jpg" alt="Animación 3D">
             </div>
-            <div class="categoria">
+            <div onclick="irAGal()" class="categoria">
                 <span class="titulo">Galería de Artistas</span>
-                <img src="Imagenes/galeria.jpg" alt="Galería de Artistas"onclick="irAGal()">
+                <img src="Imagenes/galeria.jpg" alt="Galería de Artistas">
             </div>
         </section>      
         <section class="Portafolio-section">
             <div class="Portafolio-container">
               <div class="Portafolio">
-                <img src="Imagenes/Portafolio.jpg" alt="Portafolio" onclick="irPortafolio()">
+                <img src="Imagenes/Portafolio.jpg" alt="Portafolio" >
                 <div class="upload-box">
                   <div class="upload-title">Sube tu portafolio</div>
                   <button onclick="irPortafolio()" class="upload-btn">AQUÍ</button>
@@ -92,16 +93,16 @@
             </div>
             <div class="info-boxes">
                 <div class="info-card">
-                    <h3>Misión:</h3>
+                    <h2>Misión:</h2>
                     <p>Brindar una plataforma inclusiva que conecte artistas de diversas disciplinas con clientes de todo el mundo, facilitando la contratación de servicios artísticos de calidad de forma segura y accesible.</p>
                 </div>
                 <div class="info-card">
-                    <h3>Visión:</h3>
+                    <h2>Visión:</h2>
                     <p>Ser una de las plataformas de referencia para la contratación de artistas globalmente, promoviendo el talento nacional e internacional y fomentando el crecimiento de la economía de los artistas.</p>
                 </div>
-                <div class="promo-artista">
-                    <img src="Imagenes/FondoMision.jpg" alt="Conviértete en artista" onclick="irPortafolio()">
-                    <div onclick="irPortafolio()" class="promo-texto" >Conviértete en artista con ArtDayz</div>
+                <div  class="promo-artista">
+                    <img src="Imagenes/FondoMision.jpg" alt="Conviértete en artista" >
+                    <div class="promo-texto" >Conviértete en artista con ArtDayz</div>
                   </div>
                   
             </div>
@@ -121,7 +122,9 @@
           <img src="Imagenes/linke.jpg" alt="LinkedIn" />
           <img src="Imagenes/pinterest.jpg" alt="Pinterest" />
         </div>
+        <h3>
         <p onclick="irAInicio()">Art Dayz</p>
+        </h3>
       </footer>
         <script src="JavaScript.js"></script>
     </body>
