@@ -9,6 +9,7 @@
 </head>
 <body>
   <header>
+    <h1></h1>
     <div class="encabezado-superior">
       <div onclick="irAInicio()" class="logo">Art Dayz</div>
       <div class="acciones">
@@ -39,20 +40,20 @@
       <aside class="barra-lateral">
         <img src="../imagenes_mperfil/portada-foto-perfil.jpg" alt="Foto de perfil del usuario" class="foto-perfil" />
         <nav class="menu-lateral">
-          <button class="icono-menu activo" aria-label="Ver perfil">
-            <img src="../imagenes_mperfil/PERFILICONO.png" alt="Icono Perfil" onclick="irAPerfil()"/>
+          <button onclick="irAPerfil()" class="icono-menu activo" aria-label="Ver perfil">
+            <img src="../imagenes_mperfil/PERFILICONO.png" alt="Icono Perfil" />
             <span>Perfil</span>
           </button>
-          <button class="icono-menu" aria-label="Cambiar contraseña">
-            <img src="../imagenes_mperfil/seguro.png" alt="Icono Contraseña" onclick="irAContra()" />
+          <button onclick="irAContra()" class="icono-menu" aria-label="Cambiar contraseña">
+            <img src="../imagenes_mperfil/seguro.png" alt="Icono Contraseña"  />
             <span>Contraseña</span>
           </button>
-          <button class="icono-menu" aria-label="Configuración de seguridad">
-            <img src="../imagenes_mperfil/editar.png" alt="Icono Configuración" onclick="irAConfi()"/>
+          <button onclick="irAConfi()" class="icono-menu" aria-label="Configuración de seguridad">
+            <img src="../imagenes_mperfil/editar.png" alt="Icono Configuración" />
             <span>Configuración</span>
           </button>
-          <button class="icono-menu" aria-label="Eliminar cuenta">
-            <img src="../imagenes_mperfil/papelera.png" alt="Icono Eliminar" onclick="irAElimin()"/>
+          <button onclick="irAElimin()" class="icono-menu" aria-label="Eliminar cuenta">
+            <img src="../imagenes_mperfil/papelera.png" alt="Icono Eliminar" />
             <span>Eliminar</span>
           </button>
         </nav>
@@ -97,7 +98,9 @@
       <img src="../../Imagenes/linke.jpg" alt="LinkedIn" />
       <img src="../../Imagenes/pinterest.jpg" alt="Pinterest" />
     </div>
+    <h3>
     <p onclick="irAInicio()">Art Dayz</p>
+  </h3>
   </footer>
 
   <script>

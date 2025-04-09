@@ -51,7 +51,7 @@ function renderizarCarrito() {
       <div class="producto-info">
         <img src="${producto.imagen}" alt="${producto.nombre}" />
         <div>
-          <h4>${producto.nombre}</h4>
+          <h3>${producto.nombre}</h3>
           <p class="producto-precio">$${producto.precio}</p>
         </div>
       </div>
@@ -107,7 +107,7 @@ function irAPerfil() {
   window.location.href = "../Perfiles/mperfil/mperfil.html";
 }
 function irACrear() {
-  /*window.location.href = "pagina carrito/carrito.html";*/
+  window.location.href = "../CrearCuen/CrearCuen.html";
 }
 function irAinicioS() {
   window.location.href = "../IniciarSes/InicioSesion.html";
