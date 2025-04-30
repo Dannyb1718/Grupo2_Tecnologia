@@ -1,0 +1,53 @@
+{
+    "galeria": [
+      "imagenestrad/trad1.jpg",
+      "imagenestrad/trad2.jpg",
+      "imagenestrad/trad3.jpg",
+      "imagenestrad/trad4.jpg",
+      "imagenestrad/trad5.jpg",
+      "imagenestrad/trad6.jpg",
+      "imagenestrad/trad7.jpg",
+      "imagenestrad/trad8.jpg",
+      "imagenestrad/trad9.jpg",
+      "imagenestrad/trad10.jpg",
+      "imagenestrad/trad11.jpg",
+      "imagenestrad/trad12.jpg",
+      "imagenestrad/trad13.jpg",
+      "imagenestrad/trad14.jpg"
+    ],
+    "artistas": [
+      {
+        "nombre": "Abara",
+        "perfil": "imagenestrad/aba p.jpg",
+        "especialidad": "Dibujo anime",
+        "calificacion": "★★★★☆",
+        "obras": [
+          "imagenestrad/aba 1.jfif",
+          "imagenestrad/aba 2.jfif",
+          "imagenestrad/aba 3.jfif"
+        ]
+      },
+      {
+        "nombre": "Mtthnthin",
+        "perfil": "imagenestrad/Mit p.jpg",
+        "especialidad": "Dibujo cartoon",
+        "calificacion": "★★★★☆",
+        "obras": [
+          "imagenestrad/Mit 1.jpg",
+          "imagenestrad/Mit 2.jpg",
+          "imagenestrad/Mit 3.jpg"
+        ]
+      },
+      {
+        "nombre": "Naru Keito",
+        "perfil": "imagenestrad/Naru p.jpg",
+        "especialidad": "Dibujo cartoon",
+        "calificacion": "★★★★☆",
+        "obras": [
+          "imagenestrad/Naru 1.jpg",
+          "imagenestrad/Naru 2.jpg",
+          "imagenestrad/naru 3.jpg"
+        ]
+      }
+    ]
+  }    
