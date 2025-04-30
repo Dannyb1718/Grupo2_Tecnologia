@@ -1,4 +1,4 @@
-fetch("dibujodigital.json")
+fetch("artistdigi.json")
   .then(response => response.json())
   .then(artistas => {
     const contenedor = document.getElementById("contenedor-artistas");
