@@ -1,167 +1,36 @@
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Art Dayz</title>
-        <link rel="stylesheet" href="dibujodigital.css">
-    </head>
-    <body>
-        <header>
-            <div class="encabezado-superior">
-            <div onclick="irAInicio()" class="logo">Art Dayz</div>
-              <div class="acciones">
-                <button>Crear cuenta</button>
-                <button>Iniciar sesión</button>
-              </div>
-            </div>
-            <div class="encabezado-inferior">
-              <div class="barra-busqueda">
-                <input type="text" placeholder="Buscar..." aria-label="Buscar en el sitio"/>
-              </div>
-              <nav class="menu-principal" aria-label="Menú principal">
-                <div class="hamburguesa" id="hamburguesa">&#9776;</div>
-                  <ul id="elementos-menu">
-                    <li><a onclick="irAInicio()" href="#">Inicio</a></li>
-                    <li><a onclick="irAGal()" href="#">Buscar Artistas</a></li>
-                    <li><a onclick="irAPedid()" href="#">Mis Pedidos</a></li>
-                    <li><a onclick="irAPerfil()" href="#">Perfil</a></li>
-                    <li><a onclick="irACarr()" href="#">Carrito</a></li>
-                    <li><a onclick="irASopor()"href="#">Soporte</a></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-        <h2>Dibujo digital</h2>
-    <div class="gallery">
-        <img src="imagenesDD/des.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/ganyu.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/proto.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/ramon.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/ramona.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/vampire.png" alt="Imagen inicio">
-        <img src="imagenesDD/anim.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/daw.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/eva.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/fnafhs.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/mado.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/pvz.jpeg" alt="Imagen inicio">
-        <img src="imagenesDD/evas.jpeg" alt="Imagen inicio">
-    </div>
+<h2>Dibujo digital</h2>
 
-    <div class="artist-container">
-        <div class="nombre" >
-            <p><strong>Nombre:</strong> Nik</p>
-        </div>
-        <div class="artist-card">
-         
-            <img src="imagenesDD/danna.jpeg" alt="Perfil de Nik">
-            
-            <div class="informacion">
-                <div class = "info">
-                 <p><strong>Especialidad:</strong> Dibujo Furry</p>
-                 <p><strong>Calificación:</strong> ★★★★☆</p>
-                </div>
-                <div class="perfiles">
-                    <img src="imagenesDD/fur1.jpg" alt="Arte 1">
-                    <img src="imagenesDD/fur2.jpg" alt="Arte 2">
-                    <img src="imagenesDD/fur3.jpg" alt="Arte 3">
-                </div> 
+<div class="gallery">
+    <img src="imagenesDD/des.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/ganyu.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/proto.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/ramon.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/ramona.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/vampire.png" alt="Imagen inicio">
+    <img src="imagenesDD/anim.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/daw.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/eva.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/fnafhs.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/mado.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/pvz.jpeg" alt="Imagen inicio">
+    <img src="imagenesDD/evas.jpeg" alt="Imagen inicio">
+</div>
 
-                <button class="ver-mas" onclick="irAGal()">Ver más</button> 
-                  
-            </div> 
-        </div>
-    </div>   
+<div id="contenedor-artistas"></div> 
 
-    <div class="artist-container">
-        <div class="nombre" >
-            <p><strong>Nombre:</strong> Cukikuin</p>
-        </div>
-        <div class="artist-card">
-         
-            <img src="imagenesDD/cuki p.jfif" alt="Perfil de cuki">
-            
-            <div class="informacion">
-                <div class = "info">
-                 <p><strong>Especialidad:</strong> Dibujo cartoon</p>
-                 <p><strong>Calificación:</strong> ★★★★☆</p>
-                </div>
-                <div class="perfiles">
-                    <img src="imagenesDD/cuki 4.png" alt="Arte 1">
-                    <img src="imagenesDD/cuki 2.jfif" alt="Arte 2">
-                    <img src="imagenesDD/cuki 3.png" alt="Arte 3">
-                </div> 
+<footer class="footer">
+  <div class="social-icons">
+    <img src="../Imagenes/faace.jpg" alt="Facebook" />
+    <img src="../Imagenes/x.jpg" alt="Twitter" />
+    <img src="../Imagenes/insta.jpg" alt="Instagram" />
+    <img src="../Imagenes/disc.jpg" alt="Discord" />
+    <img src="../Imagenes/yutu.jpg" alt="YouTube" />
+    <img src="../Imagenes/tiktok.jpg" alt="TikTok" />
+    <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
+    <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
+  </div>
+  <p onclick="irAInicio()">Art Dayz</p>
+</footer>
 
-                <button class="ver-mas" onclick="irAGal()">Ver más</button> 
-                  
-            </div> 
-        </div>
-    </div>   
-    <div class="artist-container">
-        <div class="nombre" >
-            <p><strong>Nombre:</strong> papisugurei</p>
-        </div>
-        <div class="artist-card">
-         
-            <img src="imagenesDD/papi p.jpg" alt="Perfil de papisugurei">
-            
-            <div class="informacion">
-                <div class = "info">
-                 <p><strong>Especialidad:</strong> Dibujo anime</p>
-                 <p><strong>Calificación:</strong> ★★★★☆</p>
-                </div>
-                <div class="perfiles">
-                    <img src="imagenesDD/papi1.jfif" alt="Arte 1">
-                    <img src="imagenesDD/papi2.jfif" alt="Arte 2">
-                    <img src="imagenesDD/papi3.jfif" alt="Arte 3">
-                </div> 
+<script src="dibujodigital.js"></script>
 
-                <button class="ver-mas" onclick="irAGal()">Ver más</button> 
-                  
-            </div> 
-        </div>
-    </div>   
-    <div class="artist-container">
-        <div class="nombre" >
-            <p><strong>Nombre:</strong> thyzzem</p>
-        </div>
-        <div class="artist-card">
-         
-            <img src="imagenesDD/thy p.jpg." alt="Perfil de thyzzem">
-            
-            <div class="informacion">
-                <div class = "info">
-                 <p><strong>Especialidad:</strong> Dibujo cartoon</p>
-                 <p><strong>Calificación:</strong> ★★★★☆</p>
-                </div>
-                <div class="perfiles">
-                    <img src="imagenesDD/thy 1.jfif" alt="Arte 1">
-                    <img src="imagenesDD/thy 2.jfif" alt="Arte 2">
-                    <img src="imagenesDD/thy 3.jfif" alt="Arte 3">
-                </div> 
-
-                <button class="ver-mas" onclick="irAGal()">Ver más</button>  
-                  
-            </div> 
-        </div>
-    </div>  
-    <footer class="footer">
-        <div class="social-icons">
-          <img src="../Imagenes/faace.jpg" alt="Facebook" />
-          <img src="../Imagenes/x.jpg" alt="Twitter" />
-          <img src="../Imagenes/insta.jpg" alt="Instagram" />
-          <img src="../Imagenes/disc.jpg" alt="Discord" />
-          <img src="../Imagenes/yutu.jpg" alt="YouTube" />
-          <img src="../Imagenes/tiktok.jpg" alt="TikTok" />
-          <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
-          <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
-        </div>
-        <p onclick="irAInicio()">Art Dayz</p>
-    </footer>
-     
-    </div>
-
-    <script src="dibujodigital.js"></script>
-    </body>
-    </html>

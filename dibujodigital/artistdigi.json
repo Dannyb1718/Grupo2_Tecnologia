@@ -1,0 +1,46 @@
+[
+    {
+      "nombre": "Nik",
+      "especialidad": "Dibujo Furry",
+      "calificacion": "★★★★☆",
+      "perfil": "imagenesDD/danna.jpeg",
+      "galeria": [
+        "imagenesDD/fur1.jpg",
+        "imagenesDD/fur2.jpg",
+        "imagenesDD/fur3.jpg"
+      ]
+    },
+    {
+      "nombre": "Cukikuin",
+      "especialidad": "Dibujo cartoon",
+      "calificacion": "★★★★☆",
+      "perfil": "imagenesDD/cuki p.jfif",
+      "galeria": [
+        "imagenesDD/cuki 4.png",
+        "imagenesDD/cuki 2.jfif",
+        "imagenesDD/cuki 3.png"
+      ]
+    },
+    {
+      "nombre": "papisugurei",
+      "especialidad": "Dibujo anime",
+      "calificacion": "★★★★☆",
+      "perfil": "imagenesDD/papi p.jpg",
+      "galeria": [
+        "imagenesDD/papi1.jfif",
+        "imagenesDD/papi2.jfif",
+        "imagenesDD/papi3.jfif"
+      ]
+    },
+    {
+      "nombre": "thyzzem",
+      "especialidad": "Dibujo cartoon",
+      "calificacion": "★★★★☆",
+      "perfil": "imagenesDD/thy p.jpg.",
+      "galeria": [
+        "imagenesDD/thy 1.jfif",
+        "imagenesDD/thy 2.jfif",
+        "imagenesDD/thy 3.jfif"
+      ]
+    }
+  ]  

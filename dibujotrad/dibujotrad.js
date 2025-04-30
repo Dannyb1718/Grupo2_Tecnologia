@@ -42,7 +42,7 @@ function cargarArtistas(artistas) {
   });
 }
 
-// Funciones de navegación
+
 function irPortafolio(){ window.location.href = "../SubirPort/portfol.html"; }
 function irADibujoD(){ window.location.href = "../dibujodigital/dibujodigital.html"; }
 function irADibujoT(){ window.location.href = "../dibujotrad/dibujotrad.html"; }

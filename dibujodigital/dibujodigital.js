@@ -1,3 +1,31 @@
+fetch("dibujodigital.json")
+  .then(response => response.json())
+  .then(artistas => {
+    const contenedor = document.getElementById("contenedor-artistas");
+    artistas.forEach(artista => {
+      const artistaHTML = `
+        <div class="artist-container">
+            <div class="nombre">
+                <p><strong>Nombre:</strong> ${artista.nombre}</p>
+            </div>
+            <div class="artist-card">
+                <img src="${artista.perfil}" alt="Perfil de ${artista.nombre}">
+                <div class="informacion">
+                    <div class="info">
+                        <p><strong>Especialidad:</strong> ${artista.especialidad}</p>
+                        <p><strong>Calificación:</strong> ${artista.calificacion}</p>
+                    </div>
+                    <div class="perfiles">
+                        ${artista.galeria.map(img => `<img src="${img}" alt="Arte de ${artista.nombre}">`).join("")}
+                    </div>
+                    <button class="ver-mas" onclick="irAGal()">Ver más</button>
+                </div>
+            </div>
+        </div>`;
+      contenedor.innerHTML += artistaHTML;
+    });
+  });
+
 document.querySelectorAll(".gallery img").forEach(img => {
     img.addEventListener("click", () => {
         alert("Has seleccionado una imagen");
