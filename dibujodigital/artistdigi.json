@@ -1,5 +1,4 @@
 {
-    "categoria": "Dibujo Digital",
     "galeria": [
       "imagenesDD/des.jpeg",
       "imagenesDD/ganyu.jpeg",
@@ -18,9 +17,9 @@
     "artistas": [
       {
         "nombre": "Nik",
+        "perfil": "imagenesDD/danna.jpeg",
         "especialidad": "Dibujo Furry",
-        "calificacion": 4,
-        "fotoPerfil": "imagenesDD/danna.jpeg",
+        "calificacion": "★★★★☆",
         "obras": [
           "imagenesDD/fur1.jpg",
           "imagenesDD/fur2.jpg",
@@ -29,9 +28,9 @@
       },
       {
         "nombre": "Cukikuin",
+        "perfil": "imagenesDD/cuki p.jfif",
         "especialidad": "Dibujo cartoon",
-        "calificacion": 4,
-        "fotoPerfil": "imagenesDD/cuki p.jfif",
+        "calificacion": "★★★★☆",
         "obras": [
           "imagenesDD/cuki 4.png",
           "imagenesDD/cuki 2.jfif",
@@ -40,9 +39,9 @@
       },
       {
         "nombre": "papisugurei",
+        "perfil": "imagenesDD/papi p.jpg",
         "especialidad": "Dibujo anime",
-        "calificacion": 4,
-        "fotoPerfil": "imagenesDD/papi p.jpg",
+        "calificacion": "★★★★☆",
         "obras": [
           "imagenesDD/papi1.jfif",
           "imagenesDD/papi2.jfif",
@@ -51,9 +50,9 @@
       },
       {
         "nombre": "thyzzem",
+        "perfil": "imagenesDD/thy p.jpg",
         "especialidad": "Dibujo cartoon",
-        "calificacion": 4,
-        "fotoPerfil": "imagenesDD/thy p.jpg.",
+        "calificacion": "★★★★☆",
         "obras": [
           "imagenesDD/thy 1.jfif",
           "imagenesDD/thy 2.jfif",
@@ -61,4 +60,5 @@
         ]
       }
     ]
-  }   
+  }
+  
