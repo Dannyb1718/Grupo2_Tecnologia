@@ -1,0 +1,31 @@
+{
+    "galeria": [
+      "imagenesMod/mod1.jpg",
+      "imagenesMod/mod2.jpg",
+      "imagenesMod/mod3.jpg",
+      "imagenesMod/mod4.jpg",
+      "imagenesMod/mod5.jpg",
+      "imagenesMod/mod6.jpg",
+      "imagenesMod/mod7.jpg",
+      "imagenesMod/mod8.jpg",
+      "imagenesMod/mod9.jpg",
+      "imagenesMod/mod10.jpg",
+      "imagenesMod/mod11.jpg",
+      "imagenesMod/mod12.jpg",
+      "imagenesMod/mod13.jpg",
+      "imagenesMod/mod14.jpg"
+    ],
+    "artistas": [
+      {
+        "nombre": "Cristian Bolivar",
+        "perfil": "imagenesMod/cris 4.jpeg",
+        "especialidad": "Modelado cartoon",
+        "calificacion": "★★★★☆",
+        "obras": [
+          "imagenesMod/cris 1.jpeg",
+          "imagenesMod/cris 2.jpeg",
+          "imagenesMod/cris 3.jpeg"
+        ]
+      }
+    ]
+  }  
