@@ -1,4 +1,4 @@
-fetch("animacion3d.json")
+fetch("animacon3d.json")
   .then(response => response.json())
   .then(data => {
     cargarGaleria(data.galeria);
