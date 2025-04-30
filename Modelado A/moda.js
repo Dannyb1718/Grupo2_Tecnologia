@@ -9,14 +9,20 @@ function cargarGaleria(videos) {
   const galeria = document.getElementById("galeria");
   videos.forEach(src => {
     const video = document.createElement("video");
-    video.src = src;
     video.autoplay = true;
     video.loop = true;
     video.muted = true;
-    video.className = "video-hover";
+    video.classList.add("video-hover");
+    
+    const source = document.createElement("source");
+    source.src = src;
+    source.type = "video/mp4";
+    
+    video.appendChild(source);
     video.addEventListener("click", () => {
       alert("Has seleccionado un video");
     });
+    
     galeria.appendChild(video);
   });
 }
@@ -36,7 +42,11 @@ function cargarArtistas(artistas) {
             <p><strong>Calificación:</strong> ${artista.calificacion}</p>
           </div>
           <div class="perfiles">
-            ${artista.obras.map(obra => `<video autoplay loop muted class="video-hover"><source src="${obra}" type="video/mp4"></video>`).join('')}
+            ${artista.obras.map(obra => `
+              <video autoplay loop muted class="video-hover">
+                <source src="${obra}" type="video/mp4">
+              </video>
+            `).join('')}
           </div>
           <button class="ver-mas" onclick="irAGal()">Ver más</button>
         </div>
@@ -74,6 +84,15 @@ function irAPerfil() {
   window.location.href = "../Perfiles/mperfil/mperfil.html";
 }
 
+function irACrear() {
+  /*window.location.href = "pagina carrito/carrito.html";*/
+}
+
+function irAinicioS() {
+  window.location.href = "../IniciarSes/InicioSesion.html";
+}
+
+// Menú hamburguesa
 const hamburguesa = document.getElementById("hamburguesa");
 const menu = document.getElementById("elementos-menu");
 
