@@ -1,42 +1,46 @@
 fetch("artistdigi.json")
   .then(response => response.json())
-  .then(artistas => {
-    const contenedor = document.getElementById("contenedor-artistas");
-    artistas.forEach(artista => {
-      const artistaHTML = `
-        <div class="artist-container">
-            <div class="nombre">
-                <p><strong>Nombre:</strong> ${artista.nombre}</p>
-            </div>
-            <div class="artist-card">
-                <img src="${artista.perfil}" alt="Perfil de ${artista.nombre}">
-                <div class="informacion">
-                    <div class="info">
-                        <p><strong>Especialidad:</strong> ${artista.especialidad}</p>
-                        <p><strong>Calificación:</strong> ${artista.calificacion}</p>
-                    </div>
-                    <div class="perfiles">
-                        ${artista.galeria.map(img => `<img src="${img}" alt="Arte de ${artista.nombre}">`).join("")}
-                    </div>
-                    <button class="ver-mas" onclick="irAGal()">Ver más</button>
-                </div>
-            </div>
-        </div>`;
-      contenedor.innerHTML += artistaHTML;
-    });
+  .then(data => {
+    cargarGaleria(data.galeria);
+    cargarArtistas(data.artistas);
   });
 
-document.querySelectorAll(".gallery img").forEach(img => {
+function cargarGaleria(imagenes) {
+  const galeria = document.getElementById("galeria");
+  imagenes.forEach(src => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "Imagen de galería";
     img.addEventListener("click", () => {
-        alert("Has seleccionado una imagen");
+      alert("Has seleccionado una imagen");
     });
-});
+    galeria.appendChild(img);
+  });
+}
 
-document.querySelectorAll(".ver-mas").forEach(button => {
-    button.addEventListener("click", () => {
-        alert("Más detalles próximamente...");
-    });
-});
+function cargarArtistas(artistas) {
+  const contenedor = document.getElementById("contenedor-artistas");
+  artistas.forEach(artista => {
+    const div = document.createElement("div");
+    div.className = "artist-container";
+    div.innerHTML = `
+      <div class="nombre"><p><strong>Nombre:</strong> ${artista.nombre}</p></div>
+      <div class="artist-card">
+        <img src="${artista.perfil}" alt="Perfil de ${artista.nombre}">
+        <div class="informacion">
+          <div class="info">
+            <p><strong>Especialidad:</strong> ${artista.especialidad}</p>
+            <p><strong>Calificación:</strong> ${artista.calificacion}</p>
+          </div>
+          <div class="perfiles">
+            ${artista.obras.map(img => `<img src="${img}" alt="Arte de ${artista.nombre}">`).join('')}
+          </div>
+          <button class="ver-mas" onclick="irAGal()">Ver más</button>
+        </div>
+      </div>`;
+    contenedor.appendChild(div);
+  });
+}
 
 function irPortafolio(){
     window.location.href = "../SubirPort/portfol.html";

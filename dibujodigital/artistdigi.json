@@ -1,46 +1,64 @@
-[
-    {
-      "nombre": "Nik",
-      "especialidad": "Dibujo Furry",
-      "calificacion": "★★★★☆",
-      "perfil": "imagenesDD/danna.jpeg",
-      "galeria": [
-        "imagenesDD/fur1.jpg",
-        "imagenesDD/fur2.jpg",
-        "imagenesDD/fur3.jpg"
-      ]
-    },
-    {
-      "nombre": "Cukikuin",
-      "especialidad": "Dibujo cartoon",
-      "calificacion": "★★★★☆",
-      "perfil": "imagenesDD/cuki p.jfif",
-      "galeria": [
-        "imagenesDD/cuki 4.png",
-        "imagenesDD/cuki 2.jfif",
-        "imagenesDD/cuki 3.png"
-      ]
-    },
-    {
-      "nombre": "papisugurei",
-      "especialidad": "Dibujo anime",
-      "calificacion": "★★★★☆",
-      "perfil": "imagenesDD/papi p.jpg",
-      "galeria": [
-        "imagenesDD/papi1.jfif",
-        "imagenesDD/papi2.jfif",
-        "imagenesDD/papi3.jfif"
-      ]
-    },
-    {
-      "nombre": "thyzzem",
-      "especialidad": "Dibujo cartoon",
-      "calificacion": "★★★★☆",
-      "perfil": "imagenesDD/thy p.jpg.",
-      "galeria": [
-        "imagenesDD/thy 1.jfif",
-        "imagenesDD/thy 2.jfif",
-        "imagenesDD/thy 3.jfif"
-      ]
-    }
-  ]  
+{
+    "categoria": "Dibujo Digital",
+    "galeria": [
+      "imagenesDD/des.jpeg",
+      "imagenesDD/ganyu.jpeg",
+      "imagenesDD/proto.jpeg",
+      "imagenesDD/ramon.jpeg",
+      "imagenesDD/ramona.jpeg",
+      "imagenesDD/vampire.png",
+      "imagenesDD/anim.jpeg",
+      "imagenesDD/daw.jpeg",
+      "imagenesDD/eva.jpeg",
+      "imagenesDD/fnafhs.jpeg",
+      "imagenesDD/mado.jpeg",
+      "imagenesDD/pvz.jpeg",
+      "imagenesDD/evas.jpeg"
+    ],
+    "artistas": [
+      {
+        "nombre": "Nik",
+        "especialidad": "Dibujo Furry",
+        "calificacion": 4,
+        "fotoPerfil": "imagenesDD/danna.jpeg",
+        "obras": [
+          "imagenesDD/fur1.jpg",
+          "imagenesDD/fur2.jpg",
+          "imagenesDD/fur3.jpg"
+        ]
+      },
+      {
+        "nombre": "Cukikuin",
+        "especialidad": "Dibujo cartoon",
+        "calificacion": 4,
+        "fotoPerfil": "imagenesDD/cuki p.jfif",
+        "obras": [
+          "imagenesDD/cuki 4.png",
+          "imagenesDD/cuki 2.jfif",
+          "imagenesDD/cuki 3.png"
+        ]
+      },
+      {
+        "nombre": "papisugurei",
+        "especialidad": "Dibujo anime",
+        "calificacion": 4,
+        "fotoPerfil": "imagenesDD/papi p.jpg",
+        "obras": [
+          "imagenesDD/papi1.jfif",
+          "imagenesDD/papi2.jfif",
+          "imagenesDD/papi3.jfif"
+        ]
+      },
+      {
+        "nombre": "thyzzem",
+        "especialidad": "Dibujo cartoon",
+        "calificacion": 4,
+        "fotoPerfil": "imagenesDD/thy p.jpg.",
+        "obras": [
+          "imagenesDD/thy 1.jfif",
+          "imagenesDD/thy 2.jfif",
+          "imagenesDD/thy 3.jfif"
+        ]
+      }
+    ]
+  }   
