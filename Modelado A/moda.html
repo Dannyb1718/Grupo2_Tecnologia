@@ -1,117 +1,57 @@
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Art Dayz</title>
-        <link rel="stylesheet" href="moda.css">
-    </head>
-    <body>
-        <header>
-            <div class="encabezado-superior">
-            <div onclick="irAInicio()" class="logo">Art Dayz</div>
-              <div class="acciones">
-                <button>Crear cuenta</button>
-                <button>Iniciar sesión</button>
-              </div>
-            </div>
-            <div class="encabezado-inferior">
-              <div class="barra-busqueda">
-                <input type="text" placeholder="Buscar..." aria-label="Buscar en el sitio"/>
-              </div>
-              <nav class="menu-principal" aria-label="Menú principal">
-                <div class="hamburguesa" id="hamburguesa">&#9776;</div>
-                  <ul id="elementos-menu">
-                    <li><a onclick="irAInicio()" href="#">Inicio</a></li>
-                    <li><a onclick="irAGal()" href="#">Buscar Artistas</a></li>
-                    <li><a onclick="irAPedid()" href="#">Mis Pedidos</a></li>
-                    <li><a onclick="irAPerfil()" href="#">Perfil</a></li>
-                    <li><a onclick="irACarr()" href="#">Carrito</a></li>
-                    <li><a onclick="irASopor()"href="#">Soporte</a></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-        <h2>Animación/Modelado 3D</h2>
-    <div class="gallery">
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 1.mp4" type="video/mp4">   
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 2.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 3.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 6.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 5.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 11.mp4" type="video/mp4">   
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 7.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 8.mp4" type="video/mp4">
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 9.mp4" type="video/mp4">   
-        </video>
-        <video autoplay loop muted class="video-hover">
-            <source src="VidMod/ani 10.mp4" type="video/mp4">
-        </video>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art Dayz</title>
+  <link rel="stylesheet" href="animacion3d.css"/>
+</head>
+<body>
+  <header>
+    <div class="encabezado-superior">
+      <div onclick="irAInicio()" class="logo">Art Dayz</div>
+      <div class="acciones">
+        <button onclick="irACrear()">Crear cuenta</button>
+        <button onclick="irAinicioS()">Iniciar sesión</button>
+      </div>
     </div>
-
-    <div class="artist-container">
-        <div class="nombre" >
-            <p><strong>Nombre:</strong> Justin R</p>
-        </div>
-        <div class="artist-card">
-         
-            <img src="VidMod/pal.jpg" alt="Perfil de Justin">
-            
-            <div class="informacion">
-                <div class = "info">
-                 <p><strong>Especialidad:</strong> Modelado cartoon</p>
-                 <p><strong>Calificación:</strong> ★★★★☆</p>
-                </div>
-                <div class="perfiles">
-                    <video autoplay loop muted class="video-hover">
-                        <source src="VidMod/justin 1.mp4" type="video/mp4">   
-                    </video>
-                    <video autoplay loop muted class="video-hover">
-                        <source src="VidMod/justin 2.mp4" type="video/mp4">
-                    </video>
-                    <video autoplay loop muted class="video-hover">
-                        <source src="VidMod/justin 3.mp4" type="video/mp4">
-                    </video>
-                </div> 
-
-                <button class="ver-mas" onclick="irAGal()">Ver más</button>  
-                  
-            </div> 
-        </div>
-    </div>   
-    <footer class="footer">
-        <div class="social-icons">
-          <img src="../Imagenes/faace.jpg" alt="Facebook" />
-          <img src="../Imagenes/x.jpg" alt="Twitter" />
-          <img src="../Imagenes/insta.jpg" alt="Instagram" />
-          <img src="../Imagenes/disc.jpg" alt="Discord" />
-          <img src="../Imagenes/yutu.jpg" alt="YouTube" />
-          <img src="../Imagenes/tiktok.jpg" alt="TikTok" />
-          <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
-          <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
-        </div>
-        <p onclick="irAInicio()">Art Dayz</p>
-    </footer>
-    
+    <div class="encabezado-inferior">
+      <div class="barra-busqueda">
+        <input type="text" placeholder="Buscar..." aria-label="Buscar en el sitio"/>
+      </div>
+      <nav class="menu-principal" aria-label="Menú principal">
+        <div class="hamburguesa" id="hamburguesa">&#9776;</div>
+        <ul id="elementos-menu">
+          <li><a onclick="irAInicio()" href="#">Inicio</a></li>
+          <li><a onclick="irAGal()" href="#">Buscar Artistas</a></li>
+          <li><a onclick="irAPedid()" href="#">Mis Pedidos</a></li>
+          <li><a onclick="irAPerfil()" href="#">Perfil</a></li>
+          <li><a onclick="irACarr()" href="#">Carrito</a></li>
+          <li><a onclick="irASopor()" href="#">Soporte</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <script src="moda.js"></script>
-    </body>
-    </html>
+  <h2>Animación 3D</h2>
+
+  <div class="gallery" id="galeria"></div>
+  <div id="contenedor-artistas"></div>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <img src="../Imagenes/faace.jpg" alt="Facebook" />
+      <img src="../Imagenes/x.jpg" alt="Twitter" />
+      <img src="../Imagenes/insta.jpg" alt="Instagram" />
+      <img src="../Imagenes/disc.jpg" alt="Discord" />
+      <img src="../Imagenes/yutu.jpg" alt="YouTube" />
+      <img src="../Imagenes/tiktok.jpg" alt="TikTok" />
+      <img src="../Imagenes/linke.jpg" alt="LinkedIn" />
+      <img src="../Imagenes/pinterest.jpg" alt="Pinterest" />
+    </div>
+    <p onclick="irAInicio()">Art Dayz</p>
+  </footer>
+
+  <script src="animacion3d.js"></script>
+</body>
+</html>

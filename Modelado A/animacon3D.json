@@ -1,0 +1,38 @@
+{
+    "galeria": [
+      "VidMod/ani 1.mp4",
+      "VidMod/ani 2.mp4",
+      "VidMod/ani 3.mp4",
+      "VidMod/ani 6.mp4",
+      "VidMod/ani 5.mp4",
+      "VidMod/ani 11.mp4",
+      "VidMod/ani 7.mp4",
+      "VidMod/ani 8.mp4",
+      "VidMod/ani 9.mp4",
+      "VidMod/ani 10.mp4"
+    ],
+    "artistas": [
+      {
+        "nombre": "Justin R",
+        "perfil": "VidMod/pal.jpg",
+        "especialidad": "Modelado cartoon",
+        "calificacion": "★★★★☆",
+        "obras": [
+          "VidMod/justin 1.mp4",
+          "VidMod/justin 2.mp4",
+          "VidMod/justin 3.mp4"
+        ]
+      },
+      {
+        "nombre": "Riley X",
+        "perfil": "VidMod/riley.jpg",
+        "especialidad": "Animación 3D realista",
+        "calificacion": "★★★★★",
+        "obras": [
+          "VidMod/riley1.mp4",
+          "VidMod/riley2.mp4",
+          "VidMod/riley3.mp4"
+        ]
+      }
+    ]
+  }  
